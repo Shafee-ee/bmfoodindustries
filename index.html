@@ -39,8 +39,29 @@
       </button>
     </div>
 
+    <!-- Burger (Mobile) -->
+<button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
+  ☰
+</button>
+
   </div>
 </header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+
+  <div class="px-6 py-4 flex flex-col gap-4 text-gray-700">
+
+    <a href="index.html" class="hover:text-green-600">Home</a>
+    <a href="products.html" class="hover:text-green-600">Products</a>
+    <a href="about.html" class="hover:text-green-600">About</a>
+    <a href="contact.html" class="hover:text-green-600">Contact</a>
+
+    
+
+  </div>
+
+</div>
 
         <section class="bg-gray-100">
   <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
@@ -353,7 +374,12 @@
 
   </div>
 </footer>
-        
+        <script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
     </body>
 
 </html>
