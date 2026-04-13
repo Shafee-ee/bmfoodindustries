@@ -1,197 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="icon" type="image/png" href="images/favicon_io/favicon-32x32.png">
-  <title>Natural Ingredients Supplier India | BM Food Industries</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+    <title>Natural Ingredients Supplier India | BM Food Industries</title>
 
-  <meta name="description" content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards.">
-</head>
+    <!-- icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-<body class="bg-white">
+    <meta
+      name="description"
+      content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards."
+    />
+  </head>
 
-<!-- HEADER -->
-<header class="bg-white shadow-lg">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <body class="bg-white">
+    <!-- HEADER -->
+    <header class="bg-white shadow-lg">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- LEFT -->
+        <div class="flex items-center gap-3">
+          <img
+            src="images/logo/bm-logo.jpeg"
+            alt="BM logo"
+            class="h-16 w-auto"
+          />
 
-    <!-- LEFT -->
-    <div class="flex items-center gap-3">
-      <img src="images/logo/bm-logo.jpeg" alt="BM logo" class="h-16 w-auto">
+          <div class="leading-snug">
+            <p class="font-semibold text-green-900">BM Food Industries</p>
+            <p class="text-xs text-gray-700 font-bold text-underline">
+              BM Organics
+            </p>
+          </div>
+        </div>
 
-      <div class="leading-snug">
-        <p class="font-semibold text-green-900">
-         BM Food Industries
+        <!-- RIGHT -->
+        <div class="hidden md:flex items-center gap-8 text-md text-gray-600">
+          <a href="index.html" class="hover:text-green-600 font-semibold"
+            >Home</a
+          >
+          <a href="products.html" class="hover:text-green-600 font-semibold"
+            >Products</a
+          >
+          <a href="about.html" class="hover:text-green-600 font-semibold"
+            >About</a
+          >
+          <a href="contact.html" class="hover:text-green-600 font-semibold"
+            >Contact</a
+          >
+        </div>
 
-        </p>
-        <p class="text-xs text-gray-700 font-bold text-underline">
-             BM Organics           
-        </p>
-      </div>
-    </div>
-
-    <!-- RIGHT -->
-    <div class="hidden md:flex items-center gap-8 text-md text-gray-600">
-      <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
-      <a href="products.html" class="hover:text-green-600 font-semibold">Products</a>
-      <a href="about.html" class="hover:text-green-600 font-semibold">About</a>
-      <a href="contact.html" class="hover:text-green-600 font-semibold">Contact</a>
-
-      
-    </div>
-
-    <!-- Burger (Mobile) -->
-<button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
-  ☰
-</button>
-
-  </div>
-</header>
-
-<!-- MOBILE MENU -->
-<div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-
-  <div class="px-6 py-4 flex flex-col gap-4 text-gray-700">
-
-    <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
-    <a href="products.html" class="hover:text-green-600 font-semibold">Products</a>
-    <a href="about.html" class="hover:text-green-600 font-semibold">About</a>
-    <a href="contact.html" class="hover:text-green-600 font-semibold">Contact</a>
-
-    
-
-  </div>
-
-</div>
-
-<!-- HERO -->
-<section class="bg-green-100">
-  <div class="max-w-7xl mx-auto px-6 py-20 text-center">
-    <h1 class="text-4xl font-semibold text-gray-900">
-      Get in Touch
-    </h1>
-    <p class="mt-3 text-gray-600">
-      Reach out for product inquiries, bulk orders, and partnerships.
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section class="bg-white">
-  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
-
-    <!-- LEFT INFO -->
-    <div>
-      <h2 class="text-2xl font-semibold text-gray-900">
-        Contact Information
-      </h2>
-
-      <p class="mt-4 text-gray-600">
-        We're here to help you with product details, pricing, and bulk inquiries.
-      </p>
-
-      <div class="mt-6 space-y-4 text-gray-700">
-
-        <p>📍 Mangalore, India</p>
-
-        
-        <p>📞 <a href="tel:7353209978" class="hover:text-green-600">
-    9901919978
-  </a></p>
-
-<p>
-  🌐 <a href="https://bmfoodindustries.com" target="_blank" class="hover:text-green-600">
-    www.bmfoodindustries.com
-  </a>
-</p>
-      </div>
-
-      <div class="mt-6 flex   gap-4 text-gray-500 text-sm">
-  <span>Follow us</span>
-
-  <!-- Instagram -->
-  <a href="https://instagram.com/YOUR_USERNAME" target="_blank"
-     class="text-gray-600 hover:text-pink-600 transition">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5c3.176 0 5.75-2.574 5.75-5.75v-8.5C22 4.574 19.426 2 16.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm5.25-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
-    </svg>
-  </a>
-
-  <span>•</span>
-
-  <!-- Facebook -->
-  <a href="https://facebook.com/YOUR_PAGE" target="_blank"
-     class="text-gray-600 hover:text-blue-600 transition">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M22 12a10 10 0 10-11.5 9.87v-6.98h-2.3V12h2.3V9.8c0-2.27 1.35-3.52 3.42-3.52.99 0 2.02.18 2.02.18v2.22h-1.14c-1.12 0-1.47.7-1.47 1.41V12h2.5l-.4 2.89h-2.1v6.98A10 10 0 0022 12z"/>
-    </svg>
-  </a>
-
-</div>
-
-    </div>
-
-    <!-- FORM -->
-    <div class="bg-gray-50 p-6 rounded-lg border">
-
-      <h2 class="text-xl font-semibold text-gray-900">
-        Send an Inquiry
-      </h2>
-
-      <form onsubmit="sendToWhatsApp(event)" class="mt-6 space-y-4">
-
-        <input type="text" placeholder="Your Name" id="name"
-          class="w-full border rounded px-4 py-2 text-sm" />
-
-        <input type="email" placeholder="Email Address" id="email"
-          class="w-full border rounded px-4 py-2 text-sm" />
-
-        <textarea placeholder="Your Message" id="message"
-          class="w-full border rounded px-4 py-2 text-sm h-28"></textarea>
-
-        <button type="submit" class="bg-green-600 text-white px-5 py-2 rounded text-sm">
-          Send Via Whatsapp
+        <!-- Burger (Mobile) -->
+        <button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
+          ☰
         </button>
+      </div>
+    </header>
 
-      </form>
-
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <div class="px-6 py-4 flex flex-col gap-4 text-gray-700">
+        <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
+        <a href="products.html" class="hover:text-green-600 font-semibold"
+          >Products</a
+        >
+        <a href="about.html" class="hover:text-green-600 font-semibold"
+          >About</a
+        >
+        <a href="contact.html" class="hover:text-green-600 font-semibold"
+          >Contact</a
+        >
+      </div>
     </div>
 
-  </div>
-</section>
+    <!-- HERO -->
+    <section class="bg-green-100">
+      <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+        <h1 class="text-4xl font-semibold text-gray-900">Get in Touch</h1>
+        <p class="mt-3 text-gray-600">
+          Reach out for product inquiries, bulk orders, and partnerships.
+        </p>
+      </div>
+    </section>
 
-<footer class="bg-gray-900 text-gray-400 text-center py-6">
-  © 2026 BM Food Industries. All rights reserved.
-</footer>
+    <!-- CONTACT SECTION -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
+        <!-- LEFT INFO -->
+        <div>
+          <h2 class="text-2xl font-semibold text-gray-900">
+            Contact Information
+          </h2>
 
- <script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
+          <p class="mt-4 text-gray-600">
+            We're here to help you with product details, pricing, and bulk
+            inquiries.
+          </p>
 
-<script>
-function sendToWhatsApp(e) {
-  e.preventDefault();
+          <div class="mt-6 space-y-4 text-gray-700">
+            <div class="flex items-center gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-green-700"></i>
+              <span>Mangalore, India</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-green-700"></i>
+              <span>9901919978</span>
+            </div>
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+            <div class="flex items-center gap-3">
+              <i data-lucide="globe" class="w-5 h-5 text-green-700"></i>
+              <span>bmfoodindustries.com</span>
+            </div>
+          </div>
 
-  const phone = "919901919978"; 
+          <div class="mt-6 flex gap-4 text-gray-500 text-sm">
+            <span>Follow us</span>
 
-  const text = `Hello, I am ${name}.
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/YOUR_USERNAME"
+              target="_blank"
+              class="text-gray-600 hover:text-pink-600 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5c3.176 0 5.75-2.574 5.75-5.75v-8.5C22 4.574 19.426 2 16.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm5.25-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"
+                />
+              </svg>
+            </a>
+
+            <span>•</span>
+
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com/YOUR_PAGE"
+              target="_blank"
+              class="text-gray-600 hover:text-blue-600 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12a10 10 0 10-11.5 9.87v-6.98h-2.3V12h2.3V9.8c0-2.27 1.35-3.52 3.42-3.52.99 0 2.02.18 2.02.18v2.22h-1.14c-1.12 0-1.47.7-1.47 1.41V12h2.5l-.4 2.89h-2.1v6.98A10 10 0 0022 12z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="bg-gray-50 p-6 rounded-lg border">
+          <h2 class="text-xl font-semibold text-gray-900">Send an Inquiry</h2>
+
+          <form onsubmit="sendToWhatsApp(event)" class="mt-6 space-y-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              id="name"
+              class="w-full border rounded px-4 py-2 text-sm"
+            />
+
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="email"
+              class="w-full border rounded px-4 py-2 text-sm"
+            />
+
+            <textarea
+              placeholder="Your Message"
+              id="message"
+              class="w-full border rounded px-4 py-2 text-sm h-28"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="bg-green-600 text-white px-5 py-2 rounded text-sm"
+            >
+              Send Via Whatsapp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-6">
+      © 2026 BM Food Industries. All rights reserved.
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+
+    <script>
+      function sendToWhatsApp(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const phone = "919901919978";
+
+        const text = `Hello, I am ${name}.
 Email: ${email}
 Message: ${message}`;
 
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 
-  window.open(url, "_blank");
-}
-</script>
+        window.open(url, "_blank");
+      }
+    </script>
 
-</body>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
