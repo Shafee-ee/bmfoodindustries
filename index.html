@@ -7,10 +7,21 @@
 
         <script src= "https://cdn.tailwindcss.com"></script>
 
+        <!-- icons CDN -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+
         <title>Natural Ingredients Supplier India | BM Food Industries</title>
 
   <meta name="description" content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards.">
-    </head>
+      <style>
+  .ticker svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2;
+  }
+</style>
+
+</head>
 
     <body>
        <!-- HEADER FIX -->
@@ -104,6 +115,91 @@
     </div>
 
   </div>
+
+  <div class="overflow-hidden bg-gray-100">
+  <div class="flex w-max gap-20 my-4 bg-yellow-50 animate-scroll ticker overflow-hidden bg-green-100">
+
+    <!-- content -->
+ <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="ban"></i>
+  <span>NO ADDED SUGAR</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="flask-conical-off"></i>
+  <span>NO PRESERVATIVES</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="badge-check"></i>
+  <span>100% CLEAN LABEL</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="leaf"></i>
+  <span>NATURAL INGREDIENTS</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="droplet-off"></i>
+  <span>NO COLOR ENHANCERS</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="ban"></i>
+  <span>NO ADDED SUGAR</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="flask-conical-off"></i>
+  <span>NO PRESERVATIVES</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="badge-check"></i>
+  <span>100% CLEAN LABEL</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="leaf"></i>
+  <span>NATURAL INGREDIENTS</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="droplet-off"></i>
+  <span>NO COLOR ENHANCERS</span>
+</div>
+
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="ban"></i>
+  <span>NO ADDED SUGAR</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="flask-conical-off"></i>
+  <span>NO PRESERVATIVES</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="badge-check"></i>
+  <span>100% CLEAN LABEL</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="leaf"></i>
+  <span>NATURAL INGREDIENTS</span>
+</div>
+
+<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+  <i data-lucide="droplet-off"></i>
+  <span>NO COLOR ENHANCERS</span>
+</div>
+
+
+
+    
+</div>
 </section>
 
 <!-- CATEGORY SECTION FIX -->
@@ -413,6 +509,27 @@ function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
   menu.classList.toggle("hidden");
 }
+</script>
+
+<script>
+  lucide.createIcons();
+</script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        animation: {
+          scroll: "scroll 25s linear infinite",
+        },
+        keyframes: {
+          scroll: {
+            from: { transform: "translateX(0)" },
+            to: { transform: "translateX(-50%)" },
+          },
+        },
+      },
+    },
+  };
 </script>
     </body>
 
