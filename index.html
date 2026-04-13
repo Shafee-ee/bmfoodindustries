@@ -5,6 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="images/favicon_io/favicon-32x32.png">
 
+     <style>
+      .ticker svg {
+        width: 18px;
+        height: 18px;
+        stroke-width: 2;
+      }
+    </style>
+
         <script src= "https://cdn.tailwindcss.com"></script>
 
         <!-- icons CDN -->
@@ -13,13 +21,25 @@
         <title>Natural Ingredients Supplier India | BM Food Industries</title>
 
   <meta name="description" content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards.">
-      <style>
-  .ticker svg {
-    width: 18px;
-    height: 18px;
-    stroke-width: 2;
-  }
-</style>
+   
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        animation: {
+          scroll: "scroll 25s linear infinite",
+        },
+        keyframes: {
+          scroll: {
+            from: { transform: "translateX(0)" },
+            to: { transform: "translateX(-50%)" },
+          },
+        },
+      },
+    },
+  };
+</script>
 
 </head>
 
@@ -113,93 +133,76 @@
     <div>
       <img src="images/hero-image/hero.png" class="rounded-lg shadow-md" />
     </div>
+  </div>
+    <!-- tickr-->
+
+<div class="ticker overflow-hidden bg-yellow-50">
+  <div class="flex w-max animate-scroll gap-10 py-3">
+
+    <!-- GROUP -->
+    <div class="flex gap-10">
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="ban"></i>
+        <span>NO ADDED SUGAR</span>
+      </div>
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="flask-conical-off"></i>
+        <span>NO PRESERVATIVES</span>
+      </div>
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="badge-check"></i>
+        <span>100% CLEAN LABEL</span>
+      </div>
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="leaf"></i>
+        <span>NATURAL INGREDIENTS</span>
+      </div>
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="droplet-off"></i>
+        <span>NO COLOR ENHANCERS</span>
+      </div>
+
+    </div>
+
+    <!-- DUPLICATE GROUP -->
+    <div class="flex gap-10">
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="ban"></i>
+        <span>NO ADDED SUGAR</span>
+      </div>
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="flask-conical-off"></i>
+        <span>NO PRESERVATIVES</span>
+      </div>
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="badge-check"></i>
+        <span>100% CLEAN LABEL</span>
+      </div>
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="leaf"></i>
+        <span>NATURAL INGREDIENTS</span>
+      </div>
+
+      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
+        <i data-lucide="droplet-off"></i>
+        <span>NO COLOR ENHANCERS</span>
+      </div>
+
+    </div>
 
   </div>
-
-  <div class="overflow-hidden bg-gray-100">
-  <div class="flex w-max gap-20 my-4 bg-yellow-50 animate-scroll ticker overflow-hidden bg-green-100">
-
-    <!-- content -->
- <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="ban"></i>
-  <span>NO ADDED SUGAR</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="flask-conical-off"></i>
-  <span>NO PRESERVATIVES</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="badge-check"></i>
-  <span>100% CLEAN LABEL</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="leaf"></i>
-  <span>NATURAL INGREDIENTS</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="droplet-off"></i>
-  <span>NO COLOR ENHANCERS</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="ban"></i>
-  <span>NO ADDED SUGAR</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="flask-conical-off"></i>
-  <span>NO PRESERVATIVES</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="badge-check"></i>
-  <span>100% CLEAN LABEL</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="leaf"></i>
-  <span>NATURAL INGREDIENTS</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="droplet-off"></i>
-  <span>NO COLOR ENHANCERS</span>
 </div>
 
 
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="ban"></i>
-  <span>NO ADDED SUGAR</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="flask-conical-off"></i>
-  <span>NO PRESERVATIVES</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="badge-check"></i>
-  <span>100% CLEAN LABEL</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="leaf"></i>
-  <span>NATURAL INGREDIENTS</span>
-</div>
-
-<div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-  <i data-lucide="droplet-off"></i>
-  <span>NO COLOR ENHANCERS</span>
-</div>
-
-
-
-    
-</div>
 </section>
 
 <!-- CATEGORY SECTION FIX -->
@@ -514,23 +517,7 @@ function toggleMenu() {
 <script>
   lucide.createIcons();
 </script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        animation: {
-          scroll: "scroll 25s linear infinite",
-        },
-        keyframes: {
-          scroll: {
-            from: { transform: "translateX(0)" },
-            to: { transform: "translateX(-50%)" },
-          },
-        },
-      },
-    },
-  };
-</script>
+
     </body>
 
 </html>
