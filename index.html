@@ -1,11 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="images/favicon_io/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon_io/favicon-32x32.png"
+    />
 
-     <style>
+    <style>
       .ticker svg {
         width: 18px;
         height: 18px;
@@ -13,564 +17,654 @@
       }
     </style>
 
-        <script src= "https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- icons CDN -->
-        <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-        <title>Natural Ingredients Supplier India | BM Food Industries</title>
+    <title>Natural Ingredients Supplier India | BM Food Industries</title>
 
-  <meta name="description" content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards.">
-   
+    <meta
+      name="description"
+      content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards."
+    />
 
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        animation: {
-          scroll: "scroll 25s linear infinite",
-        },
-        keyframes: {
-          scroll: {
-            from: { transform: "translateX(0)" },
-            to: { transform: "translateX(-50%)" },
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              scroll: "scroll 25s linear infinite",
+            },
+            keyframes: {
+              scroll: {
+                from: { transform: "translateX(0)" },
+                to: { transform: "translateX(-50%)" },
+              },
+            },
           },
         },
-      },
-    },
-  };
-</script>
+      };
+    </script>
+  </head>
 
-</head>
+  <body>
+    <!-- HEADER FIX -->
+    <header class="bg-white shadow-lg">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- LEFT -->
+        <div class="flex items-center gap-3">
+          <img
+            src="images/logo/bm-logo.jpeg"
+            alt="BM logo"
+            class="h-16 w-auto"
+          />
 
-    <body>
-       <!-- HEADER FIX -->
-<header class="bg-white shadow-lg">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div class="leading-snug">
+            <p class="font-semibold text-green-900">BM Food Industries</p>
+            <p class="text-xs text-gray-700 font-bold text-underline">
+              BM Organics
+            </p>
+          </div>
+        </div>
 
-    <!-- LEFT -->
-    <div class="flex items-center gap-3">
-      <img src="images/logo/bm-logo.jpeg" alt="BM logo" class="h-16 w-auto">
+        <div class="hidden md:flex items-center gap-8 text-md text-gray-600">
+          <a href="index.html" class="hover:text-green-600 font-semibold"
+            >Home</a
+          >
+          <a href="products.html" class="hover:text-green-600 font-semibold"
+            >Products</a
+          >
+          <a href="about.html" class="hover:text-green-600 font-semibold"
+            >About</a
+          >
+          <a href="contact.html" class="hover:text-green-600 font-semibold"
+            >Contact</a
+          >
+        </div>
 
-      <div class="leading-snug">
-        <p class="font-semibold text-green-900">
-          BM Food Industries
-        </p>
-        <p class="text-xs text-gray-700 font-bold text-underline">
-          BM Organics
-        </p>
-      </div>
-    </div>
-
-
-
-    <div class="hidden md:flex items-center gap-8 text-md text-gray-600">
-      <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
-      <a href="products.html" class="hover:text-green-600 font-semibold">Products</a>
-      <a href="about.html" class="hover:text-green-600 font-semibold">About</a>
-      <a href="contact.html" class="hover:text-green-600 font-semibold">Contact</a>
-
-      
-    </div>
-
-    <!-- Burger (Mobile) -->
-<button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
-  ☰
-</button>
-
-  </div>
-</header>
-
-<!-- MOBILE MENU -->
-<div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-
-  <div class="px-6 py-4 flex flex-col gap-4 text-gray-700">
-
-    <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
-    <a href="products.html" class="hover:text-green-600 font-semibold">Products</a>
-    <a href="about.html" class="hover:text-green-600 font-semibold">About</a>
-    <a href="contact.html" class="hover:text-green-600 font-semibold">Contact</a>
-
-    
-
-  </div>
-
-</div>
-
-        <section class="bg-gray-100">
-  <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
-
-    <!-- LEFT -->
-    <div>
-      
-      <div class="flex">
-        <img src="images/logo/bm-organics.png" class="h-20 mt-3">
-      <h1 class="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight">
-        Natural Ingredients for
-        <span class="text-green-600">Global Markets</span>
-      </h1>
-      </div>
-
-      <p class="mt-4 text-gray-600">
-        We export premium freeze-dried and dehydrated products,
-        delivering quality, consistency, and trust to food and wellness brands worldwide.
-      </p>
-
-      <div class="mt-6 flex gap-4">
-        <button class="bg-green-600 text-white px-6 py-3 rounded-md">
-1234
-          <a href="products.html">View Products</a>
-          
-        </button>
-
-        <button class="border border-gray-300 px-6 py-3 rounded-md">
-          <a href="contact.html">Contact Us</a>
-          
+        <!-- Burger (Mobile) -->
+        <button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
+          ☰
         </button>
       </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <div class="px-6 py-4 flex flex-col gap-4 text-gray-700">
+        <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
+        <a href="products.html" class="hover:text-green-600 font-semibold"
+          >Products</a
+        >
+        <a href="about.html" class="hover:text-green-600 font-semibold"
+          >About</a
+        >
+        <a href="contact.html" class="hover:text-green-600 font-semibold"
+          >Contact</a
+        >
+      </div>
     </div>
 
-    <!-- RIGHT -->
-    <div>
-      <img src="images/hero-image/hero.png" class="rounded-lg shadow-md" />
-    </div>
-  </div>
-    <!-- tickr-->
+    <section class="bg-gray-100">
+      <div
+        class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- LEFT -->
+        <div>
+          <div class="flex">
+            <img src="images/logo/bm-organics.png" class="h-20 mt-3" />
+            <h1
+              class="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight"
+            >
+              Natural Ingredients for
+              <span class="text-green-600">Global Markets</span>
+            </h1>
+          </div>
 
-<div class="ticker overflow-hidden bg-yellow-50">
-  <div class="flex w-max animate-scroll gap-10 py-3">
-
-    <!-- GROUP -->
-    <div class="flex gap-10">
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="ban"></i>
-        <span>NO ADDED SUGAR</span>
-      </div>
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="flask-conical-off"></i>
-        <span>NO PRESERVATIVES</span>
-      </div>
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="badge-check"></i>
-        <span>100% CLEAN LABEL</span>
-      </div>
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="leaf"></i>
-        <span>NATURAL INGREDIENTS</span>
-      </div>
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="droplet-off"></i>
-        <span>NO COLOR ENHANCERS</span>
-      </div>
-
-    </div>
-
-    <!-- DUPLICATE GROUP -->
-    <div class="flex gap-10">
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="ban"></i>
-        <span>NO ADDED SUGAR</span>
-      </div>
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="flask-conical-off"></i>
-        <span>NO PRESERVATIVES</span>
-      </div>
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="badge-check"></i>
-        <span>100% CLEAN LABEL</span>
-      </div>
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="leaf"></i>
-        <span>NATURAL INGREDIENTS</span>
-      </div>
-
-      <div class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800">
-        <i data-lucide="droplet-off"></i>
-        <span>NO COLOR ENHANCERS</span>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-
-</section>
-
-<!-- CATEGORY SECTION FIX -->
-<section class="bg-green-100">
-  <div class="max-w-7xl mx-auto px-6 py-20">
-
-    <!-- Title -->
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-semibold text-gray-900">
-        Our Product Categories
-      </h2>
-      <p class="mt-3 text-gray-600">
-        A wide range of natural and processed ingredients designed for global food and wellness brands.
-      </p>
-    </div>
-
-    <!-- Grid -->
-    <div class="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-
-      <!-- Freeze -->
-<div class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]">        
-  <img src="images/categories/freeze-dried.png" class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none " />
-
-        <div class="relative z-10 max-w-[60%]">
-          <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-          <h3 class="font-semibold text-lg text-gray-900">Premium Freeze dried fruit  bites and powders</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            Preserving taste, color, and nutrients with advanced freeze-drying.
-          </p>
-        </div>
-      </div>
-
-      <!-- Powders -->
-<div class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]">       
-   <img src="images/categories/dehydrated-powder.png" class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none" />
-
-        <div class="relative z-10 max-w-[60%]">
-          <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-          <h3 class="font-semibold text-lg text-gray-900">Dehydrated fruit flakes and powders</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            Fine powders from fruits and vegetables for versatile applications.
-          </p>
-        </div>
-      </div>
-
-      <!-- Slices -->
-<div class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]">       
-   <img src="images/categories/slices-flakes.png" class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none   " />
-
-        <div class="relative z-10 max-w-[60%]">
-          <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-          <h3 class="font-semibold text-lg text-gray-900">Dehydrated flower petals and powders</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            High-quality dehydrated slices and flakes with natural flavor.
-          </p>
-        </div>
-      </div>
-
-      <!-- Flowers -->
-<div class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]">      
-    <img src="images/categories/flower-petals-powders.png" class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none" />
-
-        <div class="relative z-10 max-w-[60%]">
-          <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-          <h3 class="font-semibold text-lg text-gray-900">Kaaya fried coconut paste</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            Natural botanical ingredients for culinary and cosmetic use.
-          </p>
-        </div>
-      </div>
-
-      <!-- Coconut -->
-<div class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]">       
-   <img src="images/categories/coconut-ingredients.png" class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none" />
-
-        <div class="relative z-10 max-w-[60%]">
-          <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-          <h3 class="font-semibold text-lg text-gray-900">Kaaya dehydrated instant idli mix</h3>
-          <p class="mt-2 text-sm text-gray-600">
-            Coconut-based products and traditional blends for authentic recipes.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="bg-gray-100">
-  <div class="max-w-7xl mx-auto px-6 py-20">
-
-    <!-- Title -->
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-semibold text-gray-900">
-        Featured Products
-      </h2>
-      <p class="mt-3 text-gray-600">
-        Premium quality products crafted for global markets.
-      </p>
-    </div>
-
-    <!-- Grid -->
-    <div class="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-
-      <!-- Product 1 -->
-      <div class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md hover:-translate-y-1 transition cursor-pointer">
-        <div class="flex items-center justify-center h-44 rounded-md">
-          <img src="images/home-page-products/pineapple.png" class="h-full object-contain" />
-        </div>
-
-        <div class="mt-4">
-          <h3 class="text-md font-semibold text-gray-900">
-            Freeze-Dried Pineapple
-          </h3>
-
-          <p class="text-sm text-green-600 mt-1">
-            Freeze-Dried
+          <p class="mt-4 text-gray-600">
+            We export premium freeze-dried and dehydrated products, delivering
+            quality, consistency, and trust to food and wellness brands
+            worldwide.
           </p>
 
-          <p class="text-sm text-gray-500 mt-2">
-            No preservatives · Natural taste
-          </p>
+          <div class="mt-6 flex gap-4">
+            <button class="bg-green-600 text-white px-6 py-3 rounded-md">
+              1234
+              <a href="products.html">View Products</a>
+            </button>
 
-          <button class="mt-4 text-sm font-medium bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
-
-            <a href="contact.html">Enquire →</a>
-  
-</button>
-        </div>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md hover:-translate-y-1 transition cursor-pointer">
-        <div class="flex items-center justify-center  rounded-md h-44">
-          <img src="images/home-page-products/strawberry.png" class="h-full object-contain" />
+            <button class="border border-gray-300 px-6 py-3 rounded-md">
+              <a href="contact.html">Contact Us</a>
+            </button>
+          </div>
         </div>
 
-        <div class="mt-4">
-          <h3 class="text-md font-semibold text-gray-900">
-            Freeze-Dried Strawberry
-          </h3>
-
-          <p class="text-sm text-green-600 mt-1">
-            Freeze-Dried
-          </p>
-
-          <p class="text-sm text-gray-500 mt-2">
-            Rich flavor · Premium quality
-          </p>
-
-            <button class="mt-4 text-sm font-medium bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
-  <a href="contact.html">Enquire →</a>
-</button>
+        <!-- RIGHT -->
+        <div>
+          <img src="images/hero-image/hero.png" class="rounded-lg shadow-md" />
         </div>
       </div>
+      <!-- tickr-->
 
-      <!-- Product 3 -->
-      <div class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md hover:-translate-y-1 transition cursor-pointer">
-        <div class="flex items-center justify-center rounded-md h-44">
-          <img src="images/home-page-products/mango.png" class="h-full object-contain" />
+      <div class="ticker overflow-hidden bg-yellow-50">
+        <div class="flex w-max animate-scroll gap-10 py-3">
+          <!-- GROUP -->
+          <div class="flex gap-10">
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="ban"></i>
+              <span>NO ADDED SUGAR</span>
+            </div>
+
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="flask-conical-off"></i>
+              <span>NO PRESERVATIVES</span>
+            </div>
+
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="badge-check"></i>
+              <span>100% CLEAN LABEL</span>
+            </div>
+
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="leaf"></i>
+              <span>NATURAL INGREDIENTS</span>
+            </div>
+
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="droplet-off"></i>
+              <span>NO COLOR ENHANCERS</span>
+            </div>
+          </div>
+
+          <!-- DUPLICATE GROUP -->
+          <div class="flex gap-10">
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="ban"></i>
+              <span>NO ADDED SUGAR</span>
+            </div>
+
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="flask-conical-off"></i>
+              <span>NO PRESERVATIVES</span>
+            </div>
+
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="badge-check"></i>
+              <span>100% CLEAN LABEL</span>
+            </div>
+
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="leaf"></i>
+              <span>NATURAL INGREDIENTS</span>
+            </div>
+
+            <div
+              class="flex items-center gap-2 whitespace-nowrap font-semibold text-green-800"
+            >
+              <i data-lucide="droplet-off"></i>
+              <span>NO COLOR ENHANCERS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY SECTION FIX -->
+    <section class="bg-green-100">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <!-- Title -->
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-semibold text-gray-900">
+            Our Product Categories
+          </h2>
+          <p class="mt-3 text-gray-600">
+            A wide range of natural and processed ingredients designed for
+            global food and wellness brands.
+          </p>
         </div>
 
-        <div class="mt-4">
-          <h3 class="text-md font-semibold text-gray-900">
-            Freeze-Dried Mango
-          </h3>
+        <!-- Grid -->
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <!-- Freeze -->
+          <div
+            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+          >
+            <img
+              src="images/categories/freeze-dried.png"
+              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+            />
 
-          <p class="text-sm text-green-600 mt-1">
-            Freeze-Dried
-          </p>
+            <div class="relative z-10 max-w-[60%]">
+              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
+              <h3 class="font-semibold text-lg text-gray-900">
+                Premium Freeze dried fruit bites and powders
+              </h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Preserving taste, color, and nutrients with advanced
+                freeze-drying.
+              </p>
+            </div>
+          </div>
 
-          <p class="text-sm text-gray-500 mt-2">
-            Naturally sweet · Export quality
-          </p>
+          <!-- Powders -->
+          <div
+            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+          >
+            <img
+              src="images/categories/dehydrated-powder.png"
+              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+            />
 
-           <button class="mt-4 text-sm font-medium bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
-<a href="contact.html">Enquire →</a></button>
+            <div class="relative z-10 max-w-[60%]">
+              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
+              <h3 class="font-semibold text-lg text-gray-900">
+                Dehydrated fruit flakes and powders
+              </h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Fine powders from fruits and vegetables for versatile
+                applications.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slices -->
+          <div
+            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+          >
+            <img
+              src="images/categories/slices-flakes.png"
+              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+            />
+
+            <div class="relative z-10 max-w-[60%]">
+              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
+              <h3 class="font-semibold text-lg text-gray-900">
+                Dehydrated flower petals and powders
+              </h3>
+              <p class="mt-2 text-sm text-gray-600">
+                High-quality dehydrated slices and flakes with natural flavor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Flowers -->
+          <div
+            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+          >
+            <img
+              src="images/categories/flower-petals-powders.png"
+              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+            />
+
+            <div class="relative z-10 max-w-[60%]">
+              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
+              <h3 class="font-semibold text-lg text-gray-900">
+                Kaaya fried coconut paste
+              </h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Natural botanical ingredients for culinary and cosmetic use.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coconut -->
+          <div
+            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+          >
+            <img
+              src="images/categories/coconut-ingredients.png"
+              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+            />
+
+            <div class="relative z-10 max-w-[60%]">
+              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
+              <h3 class="font-semibold text-lg text-gray-900">
+                Kaaya dehydrated instant idli mix
+              </h3>
+              <p class="mt-2 text-sm text-gray-600">
+                Coconut-based products and traditional blends for authentic
+                recipes.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-    </div>
+    <section class="bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <!-- Title -->
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-semibold text-gray-900">
+            Featured Products
+          </h2>
+          <p class="mt-3 text-gray-600">
+            Premium quality products crafted for global markets.
+          </p>
+        </div>
 
-  </div>
-</section>
+        <!-- Grid -->
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <!-- Product 1 -->
+          <div
+            class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md hover:-translate-y-1 transition cursor-pointer"
+          >
+            <div class="flex items-center justify-center h-44 rounded-md">
+              <img
+                src="images/home-page-products/pineapple.png"
+                class="h-full object-contain"
+              />
+            </div>
 
-<section class="bg-green-100">
-  <div class="max-w-6xl mx-auto px-2 py-16 text-center">
+            <div class="mt-4">
+              <h3 class="text-md font-semibold text-gray-900">
+                Freeze-Dried Pineapple
+              </h3>
 
-    <h2 class="text-2xl font-semibold text-gray-900">
-      How Freeze Drying Works
-    </h2>
+              <p class="text-sm text-green-600 mt-1">Freeze-Dried</p>
 
-    <div class="mt-10 grid grid-cols-1 md:grid-cols-7 items-center gap-4">
+              <p class="text-sm text-gray-500 mt-2">
+                No preservatives · Natural taste
+              </p>
 
-      <!-- Step 1 -->
-      <div>
-        <img src="images/process/frozen.png" class="h-48 mx-auto rounded-lg">
-        <p class="mt-2 text-sm font-medium">Fresh Fruit</p>
+              <button
+                class="mt-4 text-sm font-medium bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+              >
+                <a href="contact.html">Enquire →</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md hover:-translate-y-1 transition cursor-pointer"
+          >
+            <div class="flex items-center justify-center rounded-md h-44">
+              <img
+                src="images/home-page-products/strawberry.png"
+                class="h-full object-contain"
+              />
+            </div>
+
+            <div class="mt-4">
+              <h3 class="text-md font-semibold text-gray-900">
+                Freeze-Dried Strawberry
+              </h3>
+
+              <p class="text-sm text-green-600 mt-1">Freeze-Dried</p>
+
+              <p class="text-sm text-gray-500 mt-2">
+                Rich flavor · Premium quality
+              </p>
+
+              <button
+                class="mt-4 text-sm font-medium bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+              >
+                <a href="contact.html">Enquire →</a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md hover:-translate-y-1 transition cursor-pointer"
+          >
+            <div class="flex items-center justify-center rounded-md h-44">
+              <img
+                src="images/home-page-products/mango.png"
+                class="h-full object-contain"
+              />
+            </div>
+
+            <div class="mt-4">
+              <h3 class="text-md font-semibold text-gray-900">
+                Freeze-Dried Mango
+              </h3>
+
+              <p class="text-sm text-green-600 mt-1">Freeze-Dried</p>
+
+              <p class="text-sm text-gray-500 mt-2">
+                Naturally sweet · Export quality
+              </p>
+
+              <button
+                class="mt-4 text-sm font-medium bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+              >
+                <a href="contact.html">Enquire →</a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Arrow -->
-      <div class="hidden md:flex justify-center">
-        <img src="images/process/arrow.png" class="h-16">
+    <section class="bg-green-100">
+      <div class="max-w-6xl mx-auto px-2 py-16 text-center">
+        <h2 class="text-2xl font-semibold text-gray-900">
+          How Freeze Drying Works
+        </h2>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-7 items-center gap-4">
+          <!-- Step 1 -->
+          <div>
+            <img
+              src="images/process/frozen.png"
+              class="h-48 mx-auto rounded-lg"
+            />
+            <p class="mt-2 text-sm font-medium">Step 1: Fresh Fruit</p>
+          </div>
+
+          <!-- Arrow -->
+          <div class="hidden md:flex justify-center">
+            <img src="images/process/arrow.png" class="h-16" />
+          </div>
+
+          <!-- Step 2 -->
+          <div>
+            <img
+              src="images/process/frozen-fruit.png"
+              class="h-48 mx-auto rounded-lg"
+            />
+            <p class="mt-2 text-sm font-medium">Step 2: Frozen</p>
+          </div>
+
+          <!-- Arrow -->
+          <div class="hidden md:flex justify-center">
+            <img src="images/process/arrow.png" class="h-16" />
+          </div>
+
+          <!-- Step 3 -->
+          <div>
+            <img
+              src="images/process/dried.png"
+              class="h-48 mx-auto rounded-lg"
+            />
+            <p class="mt-2 text-sm font-medium">Step 3: Moisture Removed</p>
+          </div>
+
+          <!-- Arrow -->
+          <div class="hidden md:flex justify-center">
+            <img src="images/process/arrow.png" class="h-16" />
+          </div>
+
+          <!-- Step 4 -->
+          <div>
+            <img
+              src="images/process/final.png"
+              class="h-48 mx-auto rounded-lg"
+            />
+            <p class="mt-2 text-sm font-medium">Step 4: Crispy Product</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Step 2 -->
-      <div>
-        <img src="images/process/frozen-fruit.png" class="h-48 mx-auto rounded-lg">
-        <p class="mt-2 text-sm font-medium">Frozen</p>
+    <section class="bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <!-- Title -->
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-semibold text-gray-900">
+            Why Choose BM Organics
+          </h2>
+          <p class="mt-3 text-gray-600">
+            Reliable sourcing, consistent quality, and global export standards
+            you can trust.
+          </p>
+        </div>
+
+        <!-- Points -->
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+          <!-- Item -->
+          <div
+            class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md transition"
+          >
+            <div class="h-1 w-10 bg-green-600 mb-3 rounded"></div>
+
+            <h3 class="font-semibold text-gray-900">Premium Quality</h3>
+
+            <p class="mt-2 text-sm text-gray-600">
+              Carefully processed to retain natural taste, color, and nutrients.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md transition"
+          >
+            <div class="h-1 w-10 bg-green-600 mb-3 rounded"></div>
+            <h3 class="font-semibold text-gray-900">Global Export Ready</h3>
+
+            <p class="mt-2 text-sm text-gray-600">
+              Products tailored for international food and wellness markets.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md transition"
+          >
+            <div class="h-1 w-10 bg-green-600 mb-3 rounded"></div>
+            <h3 class="font-semibold text-gray-900">Consistent Supply</h3>
+
+            <p class="mt-2 text-sm text-gray-600">
+              Reliable sourcing and scalable production for long-term
+              partnerships.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md transition"
+          >
+            <div class="h-1 w-10 bg-green-600 mb-3 rounded"></div>
+            <h3 class="font-semibold text-gray-900">Natural & Clean</h3>
+
+            <p class="mt-2 text-sm text-gray-600">
+              No unnecessary additives. Focused on purity and quality.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Arrow -->
-      <div class="hidden md:flex justify-center">
-        <img src="images/process/arrow.png" class="h-16">
-      </div>
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-3xl font-semibold text-gray-900">
+          Let’s Work Together
+        </h2>
 
-      <!-- Step 3 -->
-      <div>
-        <img src="images/process/dried.png" class="h-48 mx-auto rounded-lg">
-        <p class="mt-2 text-sm font-medium">Moisture Removed</p>
-      </div>
-
-      <!-- Arrow -->
-      <div class="hidden md:flex justify-center">
-        <img src="images/process/arrow.png" class="h-16">
-      </div>
-
-      <!-- Step 4 -->
-      <div>
-        <img src="images/process/final.png" class="h-48 mx-auto rounded-lg">
-        <p class="mt-2 text-sm font-medium">Crispy Product</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="bg-gray-100">
-  <div class="max-w-7xl mx-auto px-6 py-20">
-
-    <!-- Title -->
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-semibold text-gray-900">
-        Why Choose BM Organics
-      </h2>
-      <p class="mt-3 text-gray-600">
-        Reliable sourcing, consistent quality, and global export standards you can trust.
-      </p>
-    </div>
-
-    <!-- Points -->
-    <div class="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
-
-      <!-- Item -->
-<div class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md transition">
-    <div class="h-1 w-10 bg-green-600 mb-3 rounded"></div>
-
-        <h3 class="font-semibold text-gray-900">
-          Premium Quality
-        </h3>
-
-
-        <p class="mt-2 text-sm text-gray-600">
-          Carefully processed to retain natural taste, color, and nutrients.
+        <p class="mt-3 text-gray-600 max-w-xl mx-auto">
+          Get in touch with us for product inquiries, bulk orders, and
+          partnerships.
         </p>
+
+        <div class="mt-6 flex justify-center gap-4 flex-wrap">
+          <a
+            href="contact.html"
+            class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition"
+          >
+            Enquire Now
+          </a>
+        </div>
       </div>
 
-<div class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md transition">
-    <div class="h-1 w-10 bg-green-600 mb-3 rounded"></div>        <h3 class="font-semibold text-gray-900">
-          Global Export Ready
-        </h3>
+      <div
+        class="mt-6 flex justify-center items-center gap-4 text-gray-500 text-sm"
+      >
+        <span>Follow us</span>
 
-        <p class="mt-2 text-sm text-gray-600">
-          Products tailored for international food and wellness markets.
-        </p>
+        <!-- Instagram -->
+        <a
+          href="https://instagram.com/YOUR_USERNAME"
+          target="_blank"
+          class="text-gray-600 hover:text-pink-600 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5c3.176 0 5.75-2.574 5.75-5.75v-8.5C22 4.574 19.426 2 16.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm5.25-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"
+            />
+          </svg>
+        </a>
+
+        <span>•</span>
+
+        <!-- Facebook -->
+        <a
+          href="https://facebook.com/YOUR_PAGE"
+          target="_blank"
+          class="text-gray-600 hover:text-blue-600 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M22 12a10 10 0 10-11.5 9.87v-6.98h-2.3V12h2.3V9.8c0-2.27 1.35-3.52 3.42-3.52.99 0 2.02.18 2.02.18v2.22h-1.14c-1.12 0-1.47.7-1.47 1.41V12h2.5l-.4 2.89h-2.1v6.98A10 10 0 0022 12z"
+            />
+          </svg>
+        </a>
       </div>
+    </section>
 
-<div class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md transition">
-    <div class="h-1 w-10 bg-green-600 mb-3 rounded"></div>        <h3 class="font-semibold text-gray-900">
-          Consistent Supply
-        </h3>
-
-        <p class="mt-2 text-sm text-gray-600">
-          Reliable sourcing and scalable production for long-term partnerships.
-        </p>
+    <footer class="bg-gray-900 text-gray-400">
+      <div class="max-w-7xl mx-auto px-2 py-6 text-center">
+        <p class="text-sm">© 2026 BM Food Industries. All rights reserved.</p>
       </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
 
-<div class="bg-white border border-gray-100 rounded-lg p-5 hover:shadow-md transition">
-    <div class="h-1 w-10 bg-green-600 mb-3 rounded"></div>        <h3 class="font-semibold text-gray-900">
-          Natural & Clean
-        </h3>
-
-
-        <p class="mt-2 text-sm text-gray-600">
-          No unnecessary additives. Focused on purity and quality.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="bg-white">
-  <div class="max-w-7xl mx-auto px-6 py-20 text-center">
-
-    <h2 class="text-3xl font-semibold text-gray-900">
-      Let’s Work Together
-    </h2>
-
-    <p class="mt-3 text-gray-600 max-w-xl mx-auto">
-      Get in touch with us for product inquiries, bulk orders, and partnerships.
-    </p>
-
-    <div class="mt-6 flex justify-center gap-4 flex-wrap">
-      <a href="contact.html" class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition">
-        Enquire Now
-      </a>
-
-      
-    </div>
-
-    <div class="mt-6 flex justify-center items-center gap-4 text-gray-500 text-sm">
-  <span>Follow us</span>
-
-  <!-- Instagram -->
-  <a href="https://instagram.com/YOUR_USERNAME" target="_blank"
-     class="text-gray-600 hover:text-pink-600 transition">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5c3.176 0 5.75-2.574 5.75-5.75v-8.5C22 4.574 19.426 2 16.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm5.25-.75a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 9a3 3 0 100 6 3 3 0 000-6z"/>
-    </svg>
-  </a>
-
-  <span>•</span>
-
-  <!-- Facebook -->
-  <a href="https://facebook.com/YOUR_PAGE" target="_blank"
-     class="text-gray-600 hover:text-blue-600 transition">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M22 12a10 10 0 10-11.5 9.87v-6.98h-2.3V12h2.3V9.8c0-2.27 1.35-3.52 3.42-3.52.99 0 2.02.18 2.02.18v2.22h-1.14c-1.12 0-1.47.7-1.47 1.41V12h2.5l-.4 2.89h-2.1v6.98A10 10 0 0022 12z"/>
-    </svg>
-  </a>
-
-</div>
-</section>
-
-<footer class="bg-gray-900 text-gray-400">
-  <div class="max-w-7xl mx-auto px-2 py-6 text-center">
-
-    <p class="text-sm">
-      © 2026 BM Food Industries. All rights reserved.
-    </p>
-
-  </div>
-</footer>
-        <script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
-
-<script>
-  lucide.createIcons();
-</script>
-
-    </body>
-
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
