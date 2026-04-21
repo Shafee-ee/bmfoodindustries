@@ -342,6 +342,12 @@
         </div>
       </div>
     </div>
+
+    <footer class="bg-gray-900 text-gray-400">
+      <div class="max-w-7xl mx-auto px-2 py-6 text-center">
+        <p class="text-sm">© 2026 BM Food Industries. All rights reserved.</p>
+      </div>
+    </footer>
     <script>
       const products = {
         mango: {
@@ -411,7 +417,7 @@
 
         product.highlights.forEach((item) => {
           const li = document.createElement("li");
-          li.textContent = "• " + item;
+          li.innerHTML = `<span class="text-green-600 mr-1">✓</span>${item}`;
           list.appendChild(li);
         });
 
