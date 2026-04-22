@@ -1,260 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="icon" type="image/png" href="images/favicon_io/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon_io/favicon-32x32.png"
+    />
     <title>Natural Ingredients Supplier India | BM Food Industries</title>
 
-  <meta name="description" content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards.">
+    <meta
+      name="description"
+      content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards."
+    />
+  </head>
 
-</head>
+  <body class="bg-white">
+    <!-- HEADER (same as other pages) -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 backdrop-blur bg-white/80 border-b border-green-100 shadow-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between"
+      >
+        <!-- LEFT -->
+        <div class="flex items-center gap-3">
+          <img
+            src="images/logo/bm-logo.jpeg"
+            alt="BM logo"
+            class="h-12 w-auto"
+          />
 
-<body class="bg-white">
+          <div class="leading-tight">
+            <p class="font-semibold text-green-900 text-sm">
+              BM Food Industries
+            </p>
+            <p class="text-xs text-green-600 font-medium">BM Organics</p>
+          </div>
+        </div>
 
-<!-- HEADER (same as other pages) -->
-<header class="bg-white shadow-lg">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- NAV -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a
+            href="index.html"
+            class="text-gray-700 hover:text-green-600 transition"
+          >
+            Home
+          </a>
+          <a
+            href="products.html"
+            class="text-gray-700 hover:text-green-600 transition"
+          >
+            Products
+          </a>
+          <a
+            href="about.html"
+            class="text-gray-700 hover:text-green-600 transition"
+          >
+            About
+          </a>
+          <a
+            href="contact.html"
+            class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+          >
+            Contact
+          </a>
+        </div>
 
-    <!-- LEFT -->
-    <div class="flex items-center gap-3">
-      <img src="images/logo/bm-logo.jpeg" alt="BM logo" class="h-16 w-auto">
+        <!-- Burger -->
+        <button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
+          ☰
+        </button>
+      </div>
+    </header>
 
-      <div class="leading-snug">
-        <p class="font-semibold text-green-900">
-         BM Food Industries
-
-        </p>
-        <p class="text-xs text-gray-700 font-bold text-underline">
-             BM Organics           
-        </p>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <div class="px-6 py-4 mt-16 flex flex-col gap-4 text-gray-700">
+        <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
+        <a href="products.html" class="hover:text-green-600 font-semibold"
+          >Products</a
+        >
+        <a href="about.html" class="hover:text-green-600 font-semibold"
+          >About</a
+        >
+        <a href="contact.html" class="hover:text-green-600 font-semibold"
+          >Contact</a
+        >
       </div>
     </div>
 
-    <!-- RIGHT -->
-    <div class="hidden md:flex items-center gap-8 text-md text-gray-600">
-      <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
-      <a href="products.html" class="hover:text-green-600 font-semibold">Products</a>
-      <a href="about.html" class="hover:text-green-600 font-semibold">About</a>
-      <a href="contact.html" class="hover:text-green-600 font-semibold">Contact</a>
+    <!-- HERO -->
+    <section class="bg-green-100">
+      <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+        <img src="images/logo/bm-organics.png" class="h-28 mx-auto" />
 
-      
-    </div>
+        <h1 class="text-4xl font-semibold tracking-tight text-gray-900">
+          About BM Organics
+        </h1>
+        <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+          Delivering premium freeze-dried and dehydrated food products for
+          global markets.
+        </p>
+      </div>
+    </section>
 
-    <!-- Burger (Mobile) -->
-<button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
-  ☰
-</button>
+    <!-- ABOUT -->
+    <section class="bg-white">
+      <div class="max-w-3xl mx-auto px-6 py-16 text-center">
+        <p class="text-green-600 leading-relaxed mb-2 text-2xl">
+          From a trusted foundation, a new organic vision is born.
+        </p>
 
-  </div>
-</header>
+        <p class="text-gray-600 leading-relaxed">
+          Founded in 2017, <strong>BM Food Industries</strong> began with a
+          simple vision, to make everyday cooking easier, healthier, and more
+          natural. With the introduction of Kaaya, we brought traditional
+          coconut preparation into a convenient, preservative-free form, trusted
+          for its purity, taste, and simplicity.
+        </p>
 
-<!-- MOBILE MENU -->
-<div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+        <p class="mt-2 font-semibold text-green-600">
+          Today, that journey evolves.
+        </p>
 
-  <div class="px-6 py-4 flex flex-col gap-4 text-gray-700">
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          <strong> BM Organics </strong> is our step forward into
+          ingredient-focused, naturally processed food solutions, bringing
+          together innovation, sourcing, and modern food technology to meet
+          today’s growing demand for clean, honest products.
+        </p>
 
-    <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
-    <a href="products.html" class="hover:text-green-600 font-semibold">Products</a>
-    <a href="about.html" class="hover:text-green-600 font-semibold">About</a>
-    <a href="contact.html" class="hover:text-green-600 font-semibold">Contact</a>
-
-    
-
-  </div>
-
-</div>
-
-<!-- HERO -->
-<section class="bg-green-100">
-  <div class="max-w-7xl mx-auto px-6 py-24 text-center">
-    <img src="images/logo/bm-organics.png" class="h-28 mx-auto">
-
-    <h1 class="text-4xl font-semibold tracking-tight text-gray-900">
-      About BM Organics
-    </h1>
-    <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
-      Delivering premium freeze-dried and dehydrated food products for global markets.
-    </p>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="bg-white">
-  <div class="max-w-3xl mx-auto px-6 py-16 text-center">
-
-    <p class="text-green-600 leading-relaxed mb-2 text-2xl">
-      From a trusted foundation,
-a new organic vision is born.
-    </p>
-
-    <p class="text-gray-600 leading-relaxed">
-      Founded in 2017, <strong>BM Food Industries</strong> began with a
-simple vision, to make everyday cooking easier,
-healthier, and more natural. With the introduction of
-Kaaya, we brought traditional coconut preparation
-into a convenient, preservative-free form, trusted for
-its purity, taste, and simplicity.
-    </p>
-
-    <p class=" mt-2 font-semibold text-green-600">Today, that journey evolves.
-</p>
-
-    <p class="mt-4 text-gray-600 leading-relaxed">
-     <strong> BM Organics </strong> is our step forward into
-ingredient-focused, naturally processed food
-solutions, bringing together innovation,
-sourcing, and modern food technology to
-meet today’s growing demand for clean,
-honest products.
-    </p>
-
-    <!-- <p class="mt-4 text-gray-600 leading-relaxed">
+        <!-- <p class="mt-4 text-gray-600 leading-relaxed">
   Our flagship product line, <strong>Fruit Bites</strong>, offers premium freeze-dried fruit snacks in multiple variants designed for modern consumers and global markets.
 </p> -->
-
-  </div>
-</section>
-
-<!-- WHAT WE OFFER -->
-<section class="bg-green-100">
-  <div class="max-w-7xl mx-auto px-6 py-16">
-
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900">
-        What We Offer
-      </h2>
-    </div>
-
-    <div class="mt-12 grid gap-6 md:grid-cols-3">
-
-      <div class="bg-white p-6 rounded-lg border">
-        <h3 class="font-semibold text-gray-900">Freeze-Dried Products</h3>
-        <p class="mt-2 text-sm text-gray-600">
-          Retaining natural taste, color, and nutrients with advanced processing.
-        </p>
       </div>
+    </section>
 
-      <div class="bg-white p-6 rounded-lg border">
-        <h3 class="font-semibold text-gray-900">Dehydrated Ingredients</h3>
-        <p class="mt-2 text-sm text-gray-600">
-          High-quality powders, slices, and flakes for versatile applications.
-        </p>
+    <!-- WHAT WE OFFER -->
+    <section class="bg-green-100">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-semibold tracking-tight text-gray-900">
+            What We Offer
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="bg-white p-6 rounded-lg border">
+            <h3 class="font-semibold text-gray-900">Freeze-Dried Products</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              Retaining natural taste, color, and nutrients with advanced
+              processing.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg border">
+            <h3 class="font-semibold text-gray-900">Dehydrated Ingredients</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              High-quality powders, slices, and flakes for versatile
+              applications.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg border">
+            <h3 class="font-semibold text-gray-900">Export Quality</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              Products designed to meet global standards and requirements.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="bg-white p-6 rounded-lg border">
-        <h3 class="font-semibold text-gray-900">Export Quality</h3>
-        <p class="mt-2 text-sm text-gray-600">
-          Products designed to meet global standards and requirements.
-        </p>
+    <!-- APPLICATIONS -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-semibold tracking-tight text-gray-900">
+            Applications
+          </h2>
+          <p class="mt-3 text-gray-600">
+            Our products are widely used across multiple industries.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4 text-center">
+          <div class="relative overflow-hidden p-4 border rounded-lg bg-white">
+            <!-- IMAGE -->
+            <img
+              src="images/applications/snack.png"
+              class="absolute right-0 bottom-0 h-full w-[35%] object-contain opacity-80 pointer-events-none"
+            />
+
+            <!-- TEXT -->
+            <div class="relative z-10 max-w-[65%]">
+              <p class="font-medium text-gray-900">Healthy Snacks</p>
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden p-4 border rounded-lg bg-white">
+            <!-- IMAGE -->
+            <img
+              src="images/applications/cereals.png"
+              class="absolute right-0 bottom-0 h-full w-[35%] object-contain opacity-80 pointer-events-none"
+            />
+
+            <!-- TEXT -->
+            <div class="relative z-10 max-w-[65%]">
+              <p class="font-medium text-gray-900">Breakfast Cereals</p>
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden p-4 border rounded-lg bg-white">
+            <!-- IMAGE -->
+            <img
+              src="images/applications/milkshake.png"
+              class="absolute right-0 bottom-0 h-full w-[35%] object-contain opacity-80 pointer-events-none"
+            />
+
+            <!-- TEXT -->
+            <div class="relative z-10 max-w-[65%]">
+              <p class="font-medium text-gray-900">Milkshakes</p>
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden p-4 border rounded-lg bg-white">
+            <!-- IMAGE -->
+            <img
+              src="images/applications/icecream.png"
+              class="absolute right-0 bottom-0 h-full w-[35%] object-contain opacity-80 pointer-events-none"
+            />
+
+            <!-- TEXT -->
+            <div class="relative z-10 max-w-[65%]">
+              <p class="font-medium text-gray-900">Desserts & Ice cream</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-6">
+      © 2026 BM Food Industries. All rights reserved.
+    </footer>
 
-  </div>
-</section>
-
-<!-- APPLICATIONS -->
-<section class="bg-white">
-  <div class="max-w-7xl mx-auto px-6 py-16">
-
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-semibold tracking-tight text-gray-900">
-        Applications
-      </h2>
-      <p class="mt-3 text-gray-600">
-        Our products are widely used across multiple industries.
-      </p>
-    </div>
-
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4 text-center">
-
-      <div class="relative overflow-hidden p-4 border rounded-lg bg-white">
-
-  <!-- IMAGE -->
-  <img 
-    src="images/applications/snack.png"
-    class="absolute right-0 bottom-0 h-full w-[35%] object-contain opacity-80 pointer-events-none"
-  />
-
-  <!-- TEXT -->
-  <div class="relative z-10 max-w-[65%]">
-    <p class="font-medium text-gray-900">
-      Healthy Snacks
-    </p>
-  </div>
-
-</div>
-
-      <div class="relative overflow-hidden p-4 border rounded-lg bg-white">
-
-  <!-- IMAGE -->
-  <img 
-    src="images/applications/cereals.png"
-    class="absolute right-0 bottom-0 h-full w-[35%] object-contain opacity-80 pointer-events-none"
-  />
-
-  <!-- TEXT -->
-  <div class="relative z-10 max-w-[65%]">
-    <p class="font-medium text-gray-900">
-      Breakfast Cereals
-    </p>
-  </div>
-
-</div>
-
-      <div class="relative overflow-hidden p-4 border rounded-lg bg-white">
-
-  <!-- IMAGE -->
-  <img 
-    src="images/applications/milkshake.png"
-    class="absolute right-0 bottom-0 h-full w-[35%] object-contain opacity-80 pointer-events-none"
-  />
-
-  <!-- TEXT -->
-  <div class="relative z-10 max-w-[65%]">
-    <p class="font-medium text-gray-900">
-      Milkshakes
-    </p>
-  </div>
-
-</div>
-
-      <div class="relative overflow-hidden p-4 border rounded-lg bg-white">
-
-  <!-- IMAGE -->
-  <img 
-    src="images/applications/icecream.png"
-    class="absolute right-0 bottom-0 h-full w-[35%] object-contain opacity-80 pointer-events-none"
-  />
-
-  <!-- TEXT -->
-  <div class="relative z-10 max-w-[65%]">
-    <p class="font-medium text-gray-900">
-        Desserts & Ice cream
-    </p>
-  </div>
-
-</div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-gray-400 text-center py-6">
-  © 2026 BM Food Industries. All rights reserved.
-</footer>
-
-   <script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("hidden");
-}
-</script>
-
-</body>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
 </html>

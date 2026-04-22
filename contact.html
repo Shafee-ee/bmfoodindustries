@@ -23,43 +23,57 @@
 
   <body class="bg-white">
     <!-- HEADER -->
-    <header class="bg-white shadow-lg">
+    <header
+      class="fixed top-0 left-0 w-full z-50 backdrop-blur bg-white/80 border-b border-green-100 shadow-sm"
+    >
       <div
-        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+        class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between"
       >
         <!-- LEFT -->
         <div class="flex items-center gap-3">
           <img
             src="images/logo/bm-logo.jpeg"
             alt="BM logo"
-            class="h-16 w-auto"
+            class="h-12 w-auto"
           />
 
-          <div class="leading-snug">
-            <p class="font-semibold text-green-900">BM Food Industries</p>
-            <p class="text-xs text-gray-700 font-bold text-underline">
-              BM Organics
+          <div class="leading-tight">
+            <p class="font-semibold text-green-900 text-sm">
+              BM Food Industries
             </p>
+            <p class="text-xs text-green-600 font-medium">BM Organics</p>
           </div>
         </div>
 
-        <!-- RIGHT -->
-        <div class="hidden md:flex items-center gap-8 text-md text-gray-600">
-          <a href="index.html" class="hover:text-green-600 font-semibold"
-            >Home</a
+        <!-- NAV -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a
+            href="index.html"
+            class="text-gray-700 hover:text-green-600 transition"
           >
-          <a href="products.html" class="hover:text-green-600 font-semibold"
-            >Products</a
+            Home
+          </a>
+          <a
+            href="products.html"
+            class="text-gray-700 hover:text-green-600 transition"
           >
-          <a href="about.html" class="hover:text-green-600 font-semibold"
-            >About</a
+            Products
+          </a>
+          <a
+            href="about.html"
+            class="text-gray-700 hover:text-green-600 transition"
           >
-          <a href="contact.html" class="hover:text-green-600 font-semibold"
-            >Contact</a
+            About
+          </a>
+          <a
+            href="contact.html"
+            class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
           >
+            Contact
+          </a>
         </div>
 
-        <!-- Burger (Mobile) -->
+        <!-- Burger -->
         <button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
           ☰
         </button>
@@ -68,7 +82,7 @@
 
     <!-- MOBILE MENU -->
     <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-      <div class="px-6 py-4 flex flex-col gap-4 text-gray-700">
+      <div class="px-6 py-4 mt-16 flex flex-col gap-4 text-gray-700">
         <a href="index.html" class="hover:text-green-600 font-semibold">Home</a>
         <a href="products.html" class="hover:text-green-600 font-semibold"
           >Products</a
