@@ -291,6 +291,32 @@
           </div>
         </div>
       </div>
+
+      <section class="bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+          <!-- Title -->
+
+          <!-- Content -->
+          <div class="text-center mb-4">
+            <p class="text-sm text-gray-500">Compliance & Quality Standards</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-4">
+            <!-- FSSAI -->
+            <div class="flex items-center gap-3">
+              <img src="images/certifications/fssai-logo.png" class="h-8" />
+              <p class="text-sm text-gray-700 font-medium">11225999000393</p>
+            </div>
+
+            <!-- Icons -->
+            <div class="flex items-center gap-8 opacity-80">
+              <img src="images/certifications/Swacch.png" class="h-8" />
+              <img src="images/certifications/clean.png" class="h-8" />
+              <img src="images/certifications/india.png" class="h-8" />
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
     <!-- MODAL -->
     <div
@@ -346,12 +372,12 @@
             ></ul>
 
             <!-- CTA -->
-            <a
-              href="contact.html"
+            <button
+              onclick="openWhatsApp(currentProduct)"
               class="inline-block mt-7 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md transition"
             >
-              Enquire →
-            </a>
+              Buy Now →
+            </button>
           </div>
         </div>
       </div>
@@ -426,6 +452,8 @@
         document.getElementById("modalDesc").innerText = product.desc;
         document.getElementById("modalImage").src = product.image;
 
+        window.currentProduct = product.title;
+
         const list = document.getElementById("modalHighlights");
         list.innerHTML = "";
 
@@ -448,6 +476,18 @@
       function toggleMenu() {
         const menu = document.getElementById("mobileMenu");
         menu.classList.toggle("hidden");
+      }
+    </script>
+
+    <script>
+      function openWhatsApp(productName) {
+        const phone = "919901919978";
+
+        const message = `Hello, I'm interested in ${productName}. Please share price and details.`;
+
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+        window.open(url, "_blank");
       }
     </script>
   </body>
