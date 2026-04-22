@@ -17,6 +17,23 @@
       }
     </style>
 
+    <style>
+      /* show content when active */
+      .group.active .expanded {
+        opacity: 1;
+      }
+
+      .group.active .collapsed {
+        display: none;
+      }
+
+      /* default hidden */
+      .group .expanded {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    </style>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- icons CDN -->
@@ -524,7 +541,7 @@
       </div>
     </section>
 
-    <section class="bg-gradient-to-b from-white to-green-50">
+    <section id="applications" class="bg-gradient-to-b from-white to-green-50">
       <div class="max-w-7xl mx-auto px-6 py-20">
         <!-- Title -->
         <div class="text-center max-w-2xl mx-auto">
@@ -634,6 +651,235 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center text-gray-900">
+          Applications
+        </h2>
+
+        <!-- DESKTOP -->
+        <div
+          class="applications-desktop mt-12 hidden md:flex h-[420px] rounded-2xl overflow-hidden"
+        >
+          <!-- 1: SMOOTHIES -->
+          <div
+            onclick="setActive(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/snacks.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-xl font-semibold">Smoothies</h3>
+              <p class="text-sm">No cutting. No waste. Just blend.</p>
+            </div>
+
+            <div
+              class="absolute bottom-6 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-800 font-semibold tracking-widest group-[.active]:hidden"
+            >
+              SMOOTHIES
+            </div>
+          </div>
+
+          <!-- 2: CEREALS -->
+          <div
+            onclick="setActive(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/cerealsbg.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-xl font-semibold">Cereals & Granola</h3>
+              <p class="text-sm">Adds crunch & real fruit flavor</p>
+            </div>
+
+            <div
+              class="absolute bottom-6 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-800 font-semibold tracking-widest group-[.active]:hidden"
+            >
+              CEREALS
+            </div>
+          </div>
+
+          <!-- 3: DESSERTS -->
+          <div
+            onclick="setActive(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/icecreams.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-xl font-semibold">Desserts & Toppings</h3>
+              <p class="text-sm">Consistent taste every batch</p>
+            </div>
+
+            <div
+              class="absolute bottom-6 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-800 font-semibold tracking-widest group-[.active]:hidden"
+            >
+              DESSERTS
+            </div>
+          </div>
+
+          <!-- 4: BEVERAGES -->
+          <div
+            onclick="setActive(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/smoothie.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-xl font-semibold">Beverages & Shakes</h3>
+              <p class="text-sm">Blends instantly, smooth texture</p>
+            </div>
+
+            <div
+              class="absolute bottom-6 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-800 font-semibold tracking-widest group-[.active]:hidden"
+            >
+              BEVERAGES
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="applications-mobile mt-10 flex flex-col h-[520px] rounded-2xl overflow-hidden md:hidden"
+        >
+          <!-- 1: SMOOTHIES -->
+          <div
+            onclick="setActiveVertical(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/snacks.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <!-- Expanded -->
+            <div
+              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-lg font-semibold">Smoothies</h3>
+              <p class="text-sm">No cutting. No waste. Just blend.</p>
+            </div>
+
+            <!-- Collapsed -->
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
+            >
+              SMOOTHIES
+            </div>
+          </div>
+
+          <!-- 2: CEREALS -->
+          <div
+            onclick="setActiveVertical(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/cerealsbg.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-lg font-semibold">Cereals & Granola</h3>
+              <p class="text-sm">Adds crunch & real fruit flavor</p>
+            </div>
+
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
+            >
+              CEREALS
+            </div>
+          </div>
+
+          <!-- 3: DESSERTS -->
+          <div
+            onclick="setActiveVertical(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/icecreams.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-lg font-semibold">Desserts & Toppings</h3>
+              <p class="text-sm">Consistent taste every batch</p>
+            </div>
+
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
+            >
+              DESSERTS
+            </div>
+          </div>
+
+          <!-- 4: BEVERAGES -->
+          <div
+            onclick="setActiveVertical(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/milkshake.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-lg font-semibold">Beverages & Shakes</h3>
+              <p class="text-sm">Blends instantly, smooth texture</p>
+            </div>
+
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
+            >
+              BEVERAGES
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE -->
     </section>
 
     <section class="bg-gray-100">
@@ -783,16 +1029,7 @@
       lucide.createIcons();
     </script>
 
-    <script>
-      function openWhatsApp(productName) {
-        const phone = "919901919978";
-
-        const message = `Hello, I'm interested in ${productName}. Please share price and details.`;
-
-        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
-        window.open(url, "_blank");
-      }
-    </script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>
