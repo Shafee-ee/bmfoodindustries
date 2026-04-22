@@ -115,15 +115,17 @@
         <!-- LEFT -->
         <div>
           <!-- Logo -->
-          <img src="images/logo/bm-organics.png" class="h-16 mb-4" />
+          <div class="flex">
+            <img src="images/logo/bm-organics.png" class="h-24 mb-4" />
 
-          <!-- Heading -->
-          <h1
-            class="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight"
-          >
-            Natural Ingredients for
-            <span class="text-green-600">Global Markets</span>
-          </h1>
+            <!-- Heading -->
+            <h1
+              class="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight"
+            >
+              Natural Ingredients for
+              <span class="text-green-600">Global Markets</span>
+            </h1>
+          </div>
 
           <!-- Description -->
           <p class="mt-5 text-gray-600 max-w-lg">
@@ -261,9 +263,9 @@
     </section>
 
     <!-- CATEGORY SECTION FIX -->
-    <section class="bg-green-100">
-      <div class="max-w-7xl mx-auto px-6 py-20">
-        <!-- Title -->
+    <section class="bg-gradient-to-b from-green-50 to-white">
+      <div class="max-w-7xl mx-auto px-6 py-24">
+        <!-- Heading -->
         <div class="text-center max-w-2xl mx-auto">
           <h2 class="text-3xl font-semibold text-gray-900">
             Our Product Categories
@@ -275,109 +277,103 @@
         </div>
 
         <!-- Grid -->
-        <div class="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          <!-- Freeze -->
+        <div class="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <!-- Freeze Dried -->
           <div
-            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+            class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-300"
           >
             <img
               src="images/categories/freeze-dried.png"
-              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+              class="w-full h-[260px] object-cover group-hover:scale-105 transition duration-500"
             />
-
-            <div class="relative z-10 max-w-[60%]">
-              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-              <h3 class="font-semibold text-lg text-gray-900">
-                Premium Freeze dried fruit bites and powders
-              </h3>
-              <p class="mt-2 text-sm text-gray-600">
-                Preserving taste, color, and nutrients with advanced
-                freeze-drying.
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 p-5 text-white">
+              <h3 class="text-lg font-semibold">Freeze-Dried Fruits</h3>
+              <p class="text-sm opacity-80 mt-1">
+                Fruit bites, cubes & powders with long shelf life
               </p>
             </div>
           </div>
 
           <!-- Powders -->
           <div
-            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+            class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-300"
           >
             <img
               src="images/categories/dehydrated-powder.png"
-              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+              class="w-full h-[260px] object-cover group-hover:scale-105 transition duration-500"
             />
-
-            <div class="relative z-10 max-w-[60%]">
-              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-              <h3 class="font-semibold text-lg text-gray-900">
-                Dehydrated fruit flakes and powders
-              </h3>
-              <p class="mt-2 text-sm text-gray-600">
-                Fine powders from fruits and vegetables for versatile
-                applications.
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 p-5 text-white">
+              <h3 class="text-lg font-semibold">Fruit Powders</h3>
+              <p class="text-sm opacity-80 mt-1">
+                Fine powders for beverages, desserts & blends
               </p>
             </div>
           </div>
 
-          <!-- Slices -->
+          <!-- Slices / Flakes -->
           <div
-            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+            class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-300"
           >
             <img
               src="images/categories/slices-flakes.png"
-              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+              class="w-full h-[260px] object-cover group-hover:scale-105 transition duration-500"
             />
-
-            <div class="relative z-10 max-w-[60%]">
-              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-              <h3 class="font-semibold text-lg text-gray-900">
-                Dehydrated flower petals and powders
-              </h3>
-              <p class="mt-2 text-sm text-gray-600">
-                High-quality dehydrated slices and flakes with natural flavor.
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 p-5 text-white">
+              <h3 class="text-lg font-semibold">Slices & Flakes</h3>
+              <p class="text-sm opacity-80 mt-1">
+                Dehydrated cuts with natural flavor retention
               </p>
             </div>
           </div>
 
-          <!-- Flowers -->
+          <!-- Flower Petals -->
           <div
-            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+            class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-300"
           >
             <img
               src="images/categories/flower-petals-powders.png"
-              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+              class="w-full h-[260px] object-cover group-hover:scale-105 transition duration-500"
             />
-
-            <div class="relative z-10 max-w-[60%]">
-              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-              <h3 class="font-semibold text-lg text-gray-900">
-                Kaaya fried coconut paste
-              </h3>
-              <p class="mt-2 text-sm text-gray-600">
-                Natural botanical ingredients for culinary and cosmetic use.
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 p-5 text-white">
+              <h3 class="text-lg font-semibold">Flower Petals & Powders</h3>
+              <p class="text-sm opacity-80 mt-1">
+                Natural botanical ingredients for food & wellness
               </p>
             </div>
           </div>
 
           <!-- Coconut -->
           <div
-            class="group relative overflow-hidden p-6 bg-white border border-gray-100 rounded-lg hover:shadow-lg hover:-translate-y-1 transition cursor-pointer active:scale-[0.98]"
+            class="group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-300"
           >
             <img
               src="images/categories/coconut-ingredients.png"
-              class="absolute right-0 bottom-0 h-full w-[40%] object-cover pointer-events-none"
+              class="w-full h-[260px] object-cover group-hover:scale-105 transition duration-500"
             />
-
-            <div class="relative z-10 max-w-[60%]">
-              <div class="h-1 w-10 bg-green-600 mb-4 rounded"></div>
-              <h3 class="font-semibold text-lg text-gray-900">
-                Kaaya dehydrated instant idli mix
-              </h3>
-              <p class="mt-2 text-sm text-gray-600">
-                Coconut-based products and traditional blends for authentic
-                recipes.
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 p-5 text-white">
+              <h3 class="text-lg font-semibold">Coconut Products</h3>
+              <p class="text-sm opacity-80 mt-1">
+                Fried paste, powders & traditional ingredients
               </p>
             </div>
           </div>
+
+          <!-- Ready Mix -->
         </div>
       </div>
     </section>
@@ -578,7 +574,7 @@
       </div>
 
       <div
-        class="mt-6 flex justify-center items-center gap-4 text-gray-500 text-sm"
+        class="flex justify-center items-center gap-4 text-gray-500 text-2xl"
       >
         <span>Follow us</span>
 
