@@ -11,6 +11,14 @@ function toggleMenu() {
     menu.classList.remove("translate-y-full");
     overlay.classList.remove("hidden");
   }
+
+  document.body.classList.toggle("overflow-hidden");
 }
 
-document.getElementById("overlay").addEventListener("click", toggleMenu);
+const overlay = document.getElementById("overlay");
+
+overlay.addEventListener("click", (e) => {
+  if (e.target.id === "overlay") {
+    toggleMenu();
+  }
+});
