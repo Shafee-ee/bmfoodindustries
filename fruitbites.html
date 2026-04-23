@@ -85,7 +85,11 @@
 
     <!-- MOBILE MENU PANEL -->
 
+    <!-- MOBILE MENU -->
+    <!-- OVERLAY -->
     <div id="overlay" class="fixed inset-0 bg-black/40 hidden z-40"></div>
+
+    <!-- MOBILE MENU PANEL -->
     <div
       id="mobileMenu"
       class="fixed bottom-0 left-0 w-full h-[75%] bg-white shadow-lg transform translate-y-full transition-transform duration-300 z-50 rounded-t-2xl"
@@ -119,27 +123,28 @@
     <!-- PAGE HERO -->
     <section class="bg-gray-50">
       <div class="max-w-7xl mx-auto px-6 py-20 text-center">
-        <h1 class="text-4xl font-semibold text-gray-900">Our Products</h1>
+        <h1 class="text-4xl font-semibold text-gray-900">
+          Freeze Dried Fruit Bites in India
+        </h1>
 
         <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-          100% real fruit snacks. No additives. Long shelf life. Built for
-          export and modern retail.
+          100% real fruit snacks. No added sugar. Long shelf life. Ideal for
+          retail, export, and food applications.
         </p>
 
-        <!-- Trust Badges -->
         <div class="flex flex-wrap justify-center gap-3 mt-6 text-xs">
-          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full">
-            No Added Sugar
-          </span>
-          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full">
-            100% Real Fruit
-          </span>
-          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full">
-            Vegan
-          </span>
-          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full">
-            Export Quality
-          </span>
+          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full"
+            >No Added Sugar</span
+          >
+          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full"
+            >100% Real Fruit</span
+          >
+          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full"
+            >Vegan</span
+          >
+          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full"
+            >Export Quality</span
+          >
         </div>
       </div>
     </section>
@@ -343,6 +348,265 @@
       </section>
     </section>
     <!-- MODAL -->
+
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center text-gray-900">
+          Where Our Products Are Used
+        </h2>
+        <p class="text-center text-gray-700">
+          Versatile ingredients for modern food brands and applications.
+        </p>
+
+        <!-- DESKTOP -->
+        <div
+          class="applications-desktop mt-12 hidden md:flex h-[420px] rounded-2xl overflow-hidden"
+        >
+          <!-- 1: SMOOTHIES -->
+          <div
+            onclick="setActive(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/smoothie.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-xl font-semibold">Smoothies</h3>
+              <p class="text-sm">No cutting. No waste. Just blend.</p>
+            </div>
+
+            <div
+              class="absolute bottom-16 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-200 font-semibold tracking-widest group-[.active]:hidden"
+            >
+              SMOOTHIES
+            </div>
+          </div>
+
+          <!-- 2: CEREALS -->
+          <div
+            onclick="setActive(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/cerealsbg.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-xl font-semibold">Cereals & Granola</h3>
+              <p class="text-sm">Adds crunch & real fruit flavor</p>
+            </div>
+
+            <div
+              class="absolute bottom-16 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-200 font-semibold tracking-widest group-[.active]:hidden"
+            >
+              CEREALS
+            </div>
+          </div>
+
+          <!-- 3: DESSERTS -->
+          <div
+            onclick="setActive(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/icecreams.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-xl font-semibold">Desserts & Toppings</h3>
+              <p class="text-sm">Consistent taste every batch</p>
+            </div>
+
+            <div
+              class="absolute bottom-16 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-100 font-semibold tracking-widest group-[.active]:hidden"
+            >
+              DESSERTS
+            </div>
+          </div>
+
+          <!-- 4: BEVERAGES -->
+          <div
+            onclick="setActive(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/snacks.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-xl font-semibold">Beverages & Shakes</h3>
+              <p class="text-sm">Blends instantly, smooth texture</p>
+            </div>
+
+            <div
+              class="absolute bottom-16 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-200 font-semibold tracking-widest group-[.active]:hidden"
+            >
+              Snacks
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="applications-mobile mt-10 flex flex-col h-[520px] rounded-2xl overflow-hidden md:hidden"
+        >
+          <!-- 1: SMOOTHIES -->
+          <div
+            onclick="setActiveVertical(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/snacks.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <!-- Expanded -->
+            <div
+              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-lg font-semibold">Smoothies</h3>
+              <p class="text-sm">No cutting. No waste. Just blend.</p>
+            </div>
+
+            <!-- Collapsed -->
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
+            >
+              SMOOTHIES
+            </div>
+          </div>
+
+          <!-- 2: CEREALS -->
+          <div
+            onclick="setActiveVertical(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/cerealsbg.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-lg font-semibold">Cereals & Granola</h3>
+              <p class="text-sm">Adds crunch & real fruit flavor</p>
+            </div>
+
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
+            >
+              CEREALS
+            </div>
+          </div>
+
+          <!-- 3: DESSERTS -->
+          <div
+            onclick="setActiveVertical(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/icecreams.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-lg font-semibold">Desserts & Toppings</h3>
+              <p class="text-sm">Consistent taste every batch</p>
+            </div>
+
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
+            >
+              DESSERTS
+            </div>
+          </div>
+
+          <!-- 4: BEVERAGES -->
+          <div
+            onclick="setActiveVertical(this)"
+            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
+          >
+            <img
+              src="images/applications/milkshake.png"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div
+              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
+            >
+              <h3 class="text-lg font-semibold">Beverages & Shakes</h3>
+              <p class="text-sm">Blends instantly, smooth texture</p>
+            </div>
+
+            <div
+              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
+            >
+              BEVERAGES
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE -->
+    </section>
+
+    <!-- seo section-->
+    <section class="bg-white py-12">
+      <div
+        class="max-w-4xl mx-auto px-2 text-sm text-center text-gray-600 leading-relaxed"
+      >
+        BM Food Industries offers premium freeze-dried fruit bites in India,
+        including mango, strawberry, pineapple, and more. Our fruit snacks are
+        made using advanced freeze-drying technology to retain natural taste,
+        color, and nutrients. Ideal for healthy snacking, smoothies, cereals,
+        and food manufacturing applications across India and global markets.
+      </div>
+    </section>
+
+    <section class="bg-green-600 text-white py-16 text-center">
+      <h2 class="text-2xl font-semibold">Looking to Source Fruit Bites?</h2>
+
+      <a
+        href="contact.html"
+        class="inline-block mt-6 bg-white text-green-700 px-6 py-3 rounded-md font-medium"
+      >
+        Enquire Now
+      </a>
+    </section>
+
+    <!-- Modal section-->
+
     <div
       id="productModal"
       class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50"
@@ -437,5 +701,6 @@
     <script src="js/modal.js"></script>
     <script src="js/whatsapp.js"></script>
     <script src="js/mobile.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>

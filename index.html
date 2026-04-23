@@ -109,6 +109,13 @@
           >
             About
           </a>
+
+          <a
+            href="fruitbites.html"
+            class="text-gray-700 hover:text-green-600 transition"
+          >
+            Fruit Bites
+          </a>
           <a
             href="contact.html"
             class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
@@ -148,6 +155,9 @@
           >Products</a
         >
         <a href="about.html" class="font-medium hover:text-green-600">About</a>
+        <a href="fruitbites.html" class="font-medium hover:text-green-600"
+          >Fruit Bites</a
+        >
         <a href="contact.html" class="font-medium hover:text-green-600"
           >Contact</a
         >
@@ -557,347 +567,6 @@
       </div>
     </section>
 
-    <section id="applications" class="bg-gradient-to-b from-white to-green-50">
-      <div class="max-w-7xl mx-auto px-6 py-20">
-        <!-- Title -->
-        <div class="text-center max-w-2xl mx-auto">
-          <h2 class="text-3xl font-semibold tracking-tight text-gray-900">
-            Where Our Products Are Used
-          </h2>
-          <p class="mt-3 text-gray-600">
-            Versatile ingredients for modern food brands and applications.
-          </p>
-        </div>
-
-        <!-- Grid -->
-        <div class="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
-          <!-- CARD -->
-          <div
-            class="group relative overflow-hidden p-5 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition cursor-pointer"
-          >
-            <!-- subtle gradient glow -->
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition"
-            ></div>
-
-            <!-- IMAGE -->
-            <img
-              src="images/applications/snack.png"
-              class="absolute right-2 bottom-2 h-[80%] w-[40%] object-contain opacity-90 group-hover:scale-110 transition duration-300 pointer-events-none"
-            />
-
-            <!-- TEXT -->
-            <div class="relative z-10 max-w-[65%]">
-              <p class="font-semibold text-gray-900">Healthy Snacks</p>
-              <p
-                class="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition"
-              >
-                Ready-to-eat · Retail friendly
-              </p>
-            </div>
-          </div>
-
-          <!-- CARD -->
-          <div
-            class="group relative overflow-hidden p-5 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition cursor-pointer"
-          >
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition"
-            ></div>
-
-            <img
-              src="images/applications/cereals.png"
-              class="absolute right-2 bottom-2 h-[80%] w-[40%] object-contain opacity-90 group-hover:scale-110 transition duration-300 pointer-events-none"
-            />
-
-            <div class="relative z-10 max-w-[65%]">
-              <p class="font-semibold text-gray-900">Breakfast Cereals</p>
-              <p
-                class="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition"
-              >
-                Crunch enhancer · Toppings
-              </p>
-            </div>
-          </div>
-
-          <!-- CARD -->
-          <div
-            class="group relative overflow-hidden p-5 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition cursor-pointer"
-          >
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition"
-            ></div>
-
-            <img
-              src="images/applications/milkshake.png"
-              class="absolute right-2 bottom-2 h-[80%] w-[40%] object-contain opacity-90 group-hover:scale-110 transition duration-300 pointer-events-none"
-            />
-
-            <div class="relative z-10 max-w-[65%]">
-              <p class="font-semibold text-gray-900">Milkshakes</p>
-              <p
-                class="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition"
-              >
-                Flavor boost · Powder blends
-              </p>
-            </div>
-          </div>
-
-          <!-- CARD -->
-          <div
-            class="group relative overflow-hidden p-5 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition cursor-pointer"
-          >
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent opacity-0 group-hover:opacity-100 transition"
-            ></div>
-
-            <img
-              src="images/applications/icecream.png"
-              class="absolute right-2 bottom-2 h-[80%] w-[40%] object-contain opacity-90 group-hover:scale-110 transition duration-300 pointer-events-none"
-            />
-
-            <div class="relative z-10 max-w-[65%]">
-              <p class="font-semibold text-gray-900">Desserts & Ice Cream</p>
-              <p
-                class="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition"
-              >
-                Garnish · Texture enhancer
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-white py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-semibold text-center text-gray-900">
-          Applications
-        </h2>
-
-        <!-- DESKTOP -->
-        <div
-          class="applications-desktop mt-12 hidden md:flex h-[420px] rounded-2xl overflow-hidden"
-        >
-          <!-- 1: SMOOTHIES -->
-          <div
-            onclick="setActive(this)"
-            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
-          >
-            <img
-              src="images/applications/snacks.png"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div class="absolute inset-0 bg-black/30"></div>
-
-            <div
-              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
-            >
-              <h3 class="text-xl font-semibold">Smoothies</h3>
-              <p class="text-sm">No cutting. No waste. Just blend.</p>
-            </div>
-
-            <div
-              class="absolute bottom-6 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-800 font-semibold tracking-widest group-[.active]:hidden"
-            >
-              SMOOTHIES
-            </div>
-          </div>
-
-          <!-- 2: CEREALS -->
-          <div
-            onclick="setActive(this)"
-            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
-          >
-            <img
-              src="images/applications/cerealsbg.png"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div class="absolute inset-0 bg-black/30"></div>
-
-            <div
-              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
-            >
-              <h3 class="text-xl font-semibold">Cereals & Granola</h3>
-              <p class="text-sm">Adds crunch & real fruit flavor</p>
-            </div>
-
-            <div
-              class="absolute bottom-6 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-800 font-semibold tracking-widest group-[.active]:hidden"
-            >
-              CEREALS
-            </div>
-          </div>
-
-          <!-- 3: DESSERTS -->
-          <div
-            onclick="setActive(this)"
-            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
-          >
-            <img
-              src="images/applications/icecreams.png"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div class="absolute inset-0 bg-black/30"></div>
-
-            <div
-              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
-            >
-              <h3 class="text-xl font-semibold">Desserts & Toppings</h3>
-              <p class="text-sm">Consistent taste every batch</p>
-            </div>
-
-            <div
-              class="absolute bottom-6 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-800 font-semibold tracking-widest group-[.active]:hidden"
-            >
-              DESSERTS
-            </div>
-          </div>
-
-          <!-- 4: BEVERAGES -->
-          <div
-            onclick="setActive(this)"
-            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
-          >
-            <img
-              src="images/applications/smoothie.png"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div class="absolute inset-0 bg-black/30"></div>
-
-            <div
-              class="absolute bottom-6 left-6 text-white opacity-0 group-[.active]:opacity-100 transition"
-            >
-              <h3 class="text-xl font-semibold">Beverages & Shakes</h3>
-              <p class="text-sm">Blends instantly, smooth texture</p>
-            </div>
-
-            <div
-              class="absolute bottom-6 left-1/2 -translate-x-1/2 rotate-[-90deg] text-gray-800 font-semibold tracking-widest group-[.active]:hidden"
-            >
-              BEVERAGES
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="applications-mobile mt-10 flex flex-col h-[520px] rounded-2xl overflow-hidden md:hidden"
-        >
-          <!-- 1: SMOOTHIES -->
-          <div
-            onclick="setActiveVertical(this)"
-            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
-          >
-            <img
-              src="images/applications/snacks.png"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div class="absolute inset-0 bg-black/30"></div>
-
-            <!-- Expanded -->
-            <div
-              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
-            >
-              <h3 class="text-lg font-semibold">Smoothies</h3>
-              <p class="text-sm">No cutting. No waste. Just blend.</p>
-            </div>
-
-            <!-- Collapsed -->
-            <div
-              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
-            >
-              SMOOTHIES
-            </div>
-          </div>
-
-          <!-- 2: CEREALS -->
-          <div
-            onclick="setActiveVertical(this)"
-            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
-          >
-            <img
-              src="images/applications/cerealsbg.png"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div class="absolute inset-0 bg-black/30"></div>
-
-            <div
-              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
-            >
-              <h3 class="text-lg font-semibold">Cereals & Granola</h3>
-              <p class="text-sm">Adds crunch & real fruit flavor</p>
-            </div>
-
-            <div
-              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
-            >
-              CEREALS
-            </div>
-          </div>
-
-          <!-- 3: DESSERTS -->
-          <div
-            onclick="setActiveVertical(this)"
-            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
-          >
-            <img
-              src="images/applications/icecreams.png"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div class="absolute inset-0 bg-black/30"></div>
-
-            <div
-              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
-            >
-              <h3 class="text-lg font-semibold">Desserts & Toppings</h3>
-              <p class="text-sm">Consistent taste every batch</p>
-            </div>
-
-            <div
-              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
-            >
-              DESSERTS
-            </div>
-          </div>
-
-          <!-- 4: BEVERAGES -->
-          <div
-            onclick="setActiveVertical(this)"
-            class="group relative flex-[1] transition-all duration-500 cursor-pointer"
-          >
-            <img
-              src="images/applications/milkshake.png"
-              class="absolute inset-0 w-full h-full object-cover"
-            />
-
-            <div class="absolute inset-0 bg-black/30"></div>
-
-            <div
-              class="absolute bottom-4 left-4 text-white opacity-0 group-[.active]:opacity-100 transition"
-            >
-              <h3 class="text-lg font-semibold">Beverages & Shakes</h3>
-              <p class="text-sm">Blends instantly, smooth texture</p>
-            </div>
-
-            <div
-              class="absolute left-4 top-1/2 -translate-y-1/2 text-white font-semibold tracking-widest group-[.active]:hidden"
-            >
-              BEVERAGES
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MOBILE -->
-    </section>
-
     <section class="bg-gray-100">
       <div class="max-w-7xl mx-auto px-6 py-20">
         <!-- Title -->
@@ -1046,7 +715,6 @@
     </script>
 
     <script src="js/whatsapp.js"></script>
-    <script src="js/accordion.js"></script>
     <script src="js/mobile.js"></script>
   </body>
 </html>
