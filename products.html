@@ -336,11 +336,32 @@
 
         <div class="grid md:grid-cols-2 gap-10 items-center">
           <!-- IMAGE -->
-          <div class="flex justify-center">
-            <img
-              id="modalImage"
-              class="w-full max-h-[440px] object-contain drop-shadow-xl transition duration-300"
-            />
+          <div class="flex flex-col items-center">
+            <!-- CAROUSEL -->
+            <div class="relative w-full h-[320px] md:h-[340px] overflow-hidden">
+              <img
+                class="carousel-img absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-100"
+              />
+              <img
+                class="carousel-img absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-0"
+              />
+              <img
+                class="carousel-img absolute inset-0 w-full h-full object-contain transition-opacity duration-300 opacity-0"
+              />
+
+              <!-- click -->
+              <div
+                onclick="nextImage()"
+                class="absolute inset-0 cursor-pointer"
+              ></div>
+            </div>
+
+            <!-- DOTS -->
+            <div class="flex gap-2 mt-4">
+              <span class="dot w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+              <span class="dot w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+              <span class="dot w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+            </div>
           </div>
 
           <!-- CONTENT -->
@@ -394,7 +415,11 @@
           title: "Fruit Bites – Mango",
           subtitle: "Freeze-Dried",
           desc: "Premium freeze-dried mango snack with rich flavor and crunch.",
-          image: "images/products-page/mango-modal.png",
+          images: [
+            "images/products-page/mango-modal.png",
+            "images/products-page/mango-bowl.png",
+            "images/products-page/mango-modal-flat.png",
+          ],
           highlights: [
             "No preservatives",
             "Real fruit",
@@ -407,7 +432,11 @@
           title: "Fruit Bites – Strawberry",
           subtitle: "Freeze-Dried",
           desc: "Sweet and tangy strawberry bites with natural taste.",
-          image: "images/products-page/strawberry-modal.png",
+          images: [
+            "images/products-page/strawberry-modal.png",
+            "images/products-page/strawberry-bowl.png",
+            "images/products-page/strawberry-modal-flat.png",
+          ],
           highlights: ["No preservatives", "Real fruit", "Vegan"],
         },
 
@@ -415,7 +444,11 @@
           title: "Fruit Bites – Pineapple",
           subtitle: "Freeze-Dried",
           desc: "Naturally sweet pineapple with crisp texture.",
-          image: "images/products-page/pineapple-modal.png",
+          images: [
+            "images/products-page/pineapple-modal.png",
+            "images/products-page/pineapple-bowl.png",
+            "images/products-page/pineapple-modal-flat.png",
+          ],
           highlights: ["Natural taste", "No additives", "Crunchy"],
         },
 
@@ -423,7 +456,11 @@
           title: "Fruit Bites – Jamun",
           subtitle: "Freeze-Dried",
           desc: "Unique bold flavor with deep fruit notes.",
-          image: "images/products-page/jamun-modal.png",
+          images: [
+            "images/products-page/jamun-modal.png",
+            "images/products-page/jamun-bowl.png",
+            "images/products-page/jamun-modal-flat.png",
+          ],
           highlights: ["Exotic fruit", "Rich antioxidants", "No preservatives"],
         },
 
@@ -431,7 +468,11 @@
           title: "Fruit Bites – Jackfruit",
           subtitle: "Freeze-Dried",
           desc: "Tropical jackfruit with natural sweetness.",
-          image: "images/products-page/jackfruit-modal.png",
+          images: [
+            "images/products-page/jackfruit-modal.png",
+            "images/products-page/jackfruit-bowl.png",
+            "images/products-page/jackfruit-modal-flat.png",
+          ],
           highlights: ["Tropical flavor", "Crunchy texture", "Vegan"],
         },
 
@@ -439,10 +480,37 @@
           title: "Fruit Bites – Pink Guava",
           subtitle: "Freeze-Dried",
           desc: "Exotic guava snack with premium taste.",
-          image: "images/products-page/pinkGuava-modal.png",
+          images: [
+            "images/products-page/pinkguava-modal.png",
+            "images/products-page/pink-guava-bowl.png",
+            "images/products-page/pinkguava-modal-flat.png",
+          ],
           highlights: ["Premium quality", "Natural fruit", "No preservatives"],
         },
       };
+
+      let currentIndex = 0;
+      let currentImages = [];
+
+      function updateCarousel() {
+        const imgs = document.querySelectorAll(".carousel-img");
+        const dots = document.querySelectorAll(".dot");
+
+        imgs.forEach((img, i) => {
+          img.src = currentImages[i];
+          img.style.opacity = i === currentIndex ? "1" : "0";
+        });
+
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("bg-gray-800", i === currentIndex);
+          dot.classList.toggle("bg-gray-300", i !== currentIndex);
+        });
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        updateCarousel();
+      }
 
       function openModal(key) {
         const product = products[key];
@@ -450,8 +518,9 @@
         document.getElementById("modalTitle").innerText = product.title;
         document.getElementById("modalSubtitle").innerText = product.subtitle;
         document.getElementById("modalDesc").innerText = product.desc;
-        document.getElementById("modalImage").src = product.image;
-
+        currentImages = product.images;
+        currentIndex = 0;
+        updateCarousel();
         window.currentProduct = product.title;
 
         const list = document.getElementById("modalHighlights");
