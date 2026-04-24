@@ -6,8 +6,8 @@ const products = {
     equivalent: "≈ 300g fresh fruit",
     desc: "Crisp, naturally sweet mango bites.",
     images: [
-      "images/products-page/mango-modal.png",
-      "images/products-page/mango-bowl.png",
+      "images/products-page/mango-modal.gif",
+      "images/products-page/mango-bowl.gif",
       "images/products-page/mango-modal-flat.png",
     ],
     highlights: [
@@ -26,8 +26,8 @@ const products = {
     equivalent: "≈ 225g fresh fruit",
     desc: "Sweet & tangy strawberry with a crisp bite.",
     images: [
-      "images/products-page/strawberry-modal.png",
-      "images/products-page/strawberry-bowl.png",
+      "images/products-page/strawberry-modal.gif",
+      "images/products-page/strawberry-bowl.gif",
       "images/products-page/strawberry-modal-flat.png",
     ],
     highlights: [
@@ -46,8 +46,8 @@ const products = {
     equivalent: "≈ 300g fresh fruit",
     desc: "Naturally sweet pineapple with a crisp texture.",
     images: [
-      "images/products-page/pineapple-modal.png",
-      "images/products-page/pineapple-bowl.png",
+      "images/products-page/pineapple-modal.gif",
+      "images/products-page/pineapple-bowl.gif",
       "images/products-page/pineapple-modal-flat.png",
     ],
     highlights: [
@@ -66,8 +66,8 @@ const products = {
     equivalent: "≈ 300g fresh fruit",
     desc: "Bold, unique jamun flavor with natural richness.",
     images: [
-      "images/products-page/jamun-modal.png",
-      "images/products-page/jamun-bowl.png",
+      "images/products-page/jamun-modal.gif",
+      "images/products-page/jamun-bowl.gif",
       "images/products-page/jamun-modal-flat.png",
     ],
     highlights: [
@@ -86,8 +86,8 @@ const products = {
     equivalent: "≈ 300g fresh fruit",
     desc: "Tropical jackfruit with natural sweetness and crunch.",
     images: [
-      "images/products-page/jackfruit-modal.png",
-      "images/products-page/jackfruit-bowl.png",
+      "images/products-page/jackfruit-modal.gif",
+      "images/products-page/jackfruit-bowl.gif",
       "images/products-page/jackfruit-modal-flat.png",
     ],
     highlights: [
@@ -106,8 +106,8 @@ const products = {
     equivalent: "≈ 300g fresh fruit",
     desc: "Exotic pink guava with a naturally rich taste.",
     images: [
-      "images/products-page/pinkguava-modal.png",
-      "images/products-page/pink-guava-bowl.png",
+      "images/products-page/pinkguava-modal.gif",
+      "images/products-page/pink-guava-bowl.gif",
       "images/products-page/pinkguava-modal-flat.png",
     ],
     highlights: [
