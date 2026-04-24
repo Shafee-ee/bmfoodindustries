@@ -1,5 +1,3 @@
-// js/whatsapp.js
-
 window.openWhatsApp = function (productName) {
   const phone = "919901919978";
 
