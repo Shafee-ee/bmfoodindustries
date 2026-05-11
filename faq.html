@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+
+    <title>Natural Ingredients Supplier India | BM Food Industries</title>
+    <meta
+      name="description"
+      content="Exporter of freeze-dried fruits, dehydrated powders, coconut products, and natural ingredients. Bulk supply with export-quality standards."
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <header
+    class="fixed top-0 left-0 w-full z-50 backdrop-blur bg-white/80 border-b border-green-100 shadow-sm"
+  >
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <!-- LEFT -->
+      <div class="flex items-center gap-3">
+        <img src="images/logo/bm-logo.jpeg" alt="BM logo" class="h-12 w-auto" />
+
+        <div class="leading-tight">
+          <p class="font-semibold text-green-900 text-sm">BM Food Industries</p>
+          <p class="text-xs text-green-600 font-medium">BM Organics</p>
+        </div>
+      </div>
+
+      <!-- NAV -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a
+          href="index.html"
+          class="text-gray-700 hover:text-green-600 transition"
+        >
+          Home
+        </a>
+        <a
+          href="products.html"
+          class="text-gray-700 hover:text-green-600 transition"
+        >
+          Products
+        </a>
+        <a
+          href="about.html"
+          class="text-gray-700 hover:text-green-600 transition"
+        >
+          About
+        </a>
+
+        <a
+          href="fruitbites.html"
+          class="text-gray-700 hover:text-green-600 transition"
+        >
+          Fruit Bites
+        </a>
+        <a
+          href="contact.html"
+          class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+        >
+          Contact
+        </a>
+      </div>
+
+      <!-- Burger -->
+      <button onclick="toggleMenu()" class="md:hidden text-2xl text-gray-700">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <!-- OVERLAY -->
+  <div id="overlay" class="fixed inset-0 bg-black/40 hidden z-40"></div>
+
+  <!-- MOBILE MENU PANEL -->
+  <div
+    id="mobileMenu"
+    class="fixed bottom-0 left-0 w-full h-[75%] bg-white shadow-lg transform translate-y-full transition-transform duration-300 z-50 rounded-t-2xl"
+  >
+    <!-- HEADER -->
+    <div class="flex items-center justify-between px-6 py-4 border-b">
+      <img src="images/logo/logo.png" class="h-12 border rounded-lg" />
+      <span class="text-green-600 font-semibold">BM Organics</span>
+
+      <button onclick="toggleMenu()" class="text-2xl">&times;</button>
+    </div>
+
+    <!-- LINKS -->
+    <div class="flex flex-col px-6 py-6 gap-5 text-lg text-gray-800">
+      <a href="index.html" class="font-medium hover:text-green-600">Home</a>
+      <a href="products.html" class="font-medium hover:text-green-600"
+        >Products</a
+      >
+      <a href="about.html" class="font-medium hover:text-green-600">About</a>
+      <a href="fruitbites.html" class="font-medium hover:text-green-600"
+        >Fruit Bites</a
+      >
+      <a href="contact.html" class="font-medium hover:text-green-600"
+        >Contact</a
+      >
+    </div>
+
+    <!-- CTA -->
+  </div>
+
+  <body>
+    <section
+      class="relative overflow-hidden bg-gradient-to-b from-[#f8f8f5] to-[#f1f1ed] pt-40 pb-24 px-5"
+    >
+      <!-- Background Glow -->
+      <div
+        class="absolute top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-green-200/20 blur-3xl rounded-full"
+      ></div>
+
+      <div class="relative max-w-4xl mx-auto">
+        <!-- Heading -->
+        <div class="text-center mb-14">
+          <p class="text-green-600 font-semibold tracking-[0.2em] mb-4 text-sm">
+            BEFORE YOUR FIRST BITE
+          </p>
+
+          <h2
+            class="text-4xl md:text-[52px] font-bold text-gray-900 leading-none"
+          >
+            Got Questions?
+          </h2>
+
+          <p
+            class="text-gray-500 mt-6 text-lg leading-relaxed max-w-xl mx-auto"
+          >
+            Everything you might want to know about Fruit Bites, from
+            ingredients to flavors and partnerships.
+          </p>
+        </div>
+
+        <div class="space-y-14">
+          <!-- PRODUCT FAQ -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="text-2xl"><i data-lucide="apple"></i></span>
+
+              <h3 class="text-2xl font-bold text-gray-900">
+                Product Questions
+              </h3>
+            </div>
+
+            <div class="space-y-5">
+              <!-- ITEM -->
+              <div
+                class="faq-item bg-white/90 backdrop-blur-sm rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-white/60 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)]"
+              >
+                <button
+                  class="faq-toggle w-full flex items-center justify-between text-left px-7 py-6"
+                >
+                  <span
+                    class="font-medium text-gray-900 text-[18px] leading-snug pr-4"
+                  >
+                    What are Fruit Bites made from?
+                  </span>
+
+                  <span
+                    class="faq-icon flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-2xl text-green-600 transition-all duration-300"
+                  >
+                    +
+                  </span>
+                </button>
+
+                <div class="faq-content hidden px-7 pb-7">
+                  <div class="pt-5 border-t border-gray-100">
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                      Fruit Bites are made using real fruit ingredients crafted
+                      into fun, flavorful bite-sized cubes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div
+                class="faq-item bg-white/90 backdrop-blur-sm rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-white/60 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)]"
+              >
+                <button
+                  class="faq-toggle w-full flex items-center justify-between text-left px-7 py-6"
+                >
+                  <span
+                    class="font-medium text-gray-900 text-[18px] leading-snug pr-4"
+                  >
+                    Are Fruit Bites made with real fruit?
+                  </span>
+
+                  <span
+                    class="faq-icon flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-2xl text-green-600 transition-all duration-300"
+                  >
+                    +
+                  </span>
+                </button>
+
+                <div class="faq-content hidden px-7 pb-7">
+                  <div class="pt-5 border-t border-gray-100">
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                      Yes! Real fruit goodness is at the heart of every bite.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div
+                class="faq-item bg-white/90 backdrop-blur-sm rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-white/60 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)]"
+              >
+                <button
+                  class="faq-toggle w-full flex items-center justify-between text-left px-7 py-6"
+                >
+                  <span
+                    class="font-medium text-gray-900 text-[18px] leading-snug pr-4"
+                  >
+                    Do Fruit Bites contain artificial colors or preservatives?
+                  </span>
+
+                  <span
+                    class="faq-icon flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-2xl text-green-600 transition-all duration-300"
+                  >
+                    +
+                  </span>
+                </button>
+
+                <div class="faq-content hidden px-7 pb-7">
+                  <div class="pt-5 border-t border-gray-100">
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                      We focus on delivering great taste with carefully selected
+                      ingredients and quality standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div
+                class="faq-item bg-white/90 backdrop-blur-sm rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-white/60 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)]"
+              >
+                <button
+                  class="faq-toggle w-full flex items-center justify-between text-left px-7 py-6"
+                >
+                  <span
+                    class="font-medium text-gray-900 text-[18px] leading-snug pr-4"
+                  >
+                    Are Fruit Bites suitable for kids?
+                  </span>
+
+                  <span
+                    class="faq-icon flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-2xl text-green-600 transition-all duration-300"
+                  >
+                    +
+                  </span>
+                </button>
+
+                <div class="faq-content hidden px-7 pb-7">
+                  <div class="pt-5 border-t border-gray-100">
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                      Absolutely! Kids love the taste, and parents love the fun
+                      fruity experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ITEM -->
+              <div
+                class="faq-item bg-white/90 backdrop-blur-sm rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-white/60 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)]"
+              >
+                <button
+                  class="faq-toggle w-full flex items-center justify-between text-left px-7 py-6"
+                >
+                  <span
+                    class="font-medium text-gray-900 text-[18px] leading-snug pr-4"
+                  >
+                    Can adults enjoy Fruit Bites too?
+                  </span>
+
+                  <span
+                    class="faq-icon flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-2xl text-green-600 transition-all duration-300"
+                  >
+                    +
+                  </span>
+                </button>
+
+                <div class="faq-content hidden px-7 pb-7">
+                  <div class="pt-5 border-t border-gray-100">
+                    <p class="text-gray-600 leading-relaxed text-[15px]">
+                      100%. One pack is never enough.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FLAVORS -->
+              <div
+                class="faq-item bg-white/90 backdrop-blur-sm rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-white/60 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)]"
+              >
+                <button
+                  class="faq-toggle w-full flex items-center justify-between text-left px-7 py-6"
+                >
+                  <span
+                    class="font-medium text-gray-900 text-[18px] leading-snug pr-4"
+                  >
+                    What flavors are available?
+                  </span>
+
+                  <span
+                    class="faq-icon flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-2xl text-green-600 transition-all duration-300"
+                  >
+                    +
+                  </span>
+                </button>
+
+                <div class="faq-content hidden px-7 pb-7">
+                  <div class="pt-5 border-t border-gray-100">
+                    <ul
+                      class="grid grid-cols-2 gap-3 text-[15px] text-gray-700"
+                    >
+                      <li>🥭 Mango</li>
+                      <li>🍓 Strawberry</li>
+                      <li>🌸 Pink Guava</li>
+                      <li>🫐 Jamun</li>
+                      <li>🍍 Pineapple</li>
+                      <li>🌳 Jackfruit</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RETAIL -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="text-2xl">🛒</span>
+
+              <h3 class="text-2xl font-bold text-gray-900">
+                Retail & Partnerships
+              </h3>
+            </div>
+
+            <div class="space-y-5">
+              <div
+                class="faq-item bg-white/90 backdrop-blur-sm rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-white/60 overflow-hidden"
+              >
+                <button
+                  class="faq-toggle w-full flex items-center justify-between text-left px-7 py-6"
+                >
+                  <span class="font-medium text-gray-900 text-[18px] pr-4">
+                    Do you offer wholesale or distributor partnerships?
+                  </span>
+
+                  <span
+                    class="faq-icon flex items-center justify-center w-10 h-10 rounded-full bg-green-50 text-2xl text-green-600"
+                  >
+                    +
+                  </span>
+                </button>
+
+                <div class="faq-content hidden px-7 pb-7">
+                  <div class="pt-5 border-t border-gray-100">
+                    <p class="text-gray-600 text-[15px] leading-relaxed">
+                      Yes! We’re actively partnering with retailers and
+                      distributors. Reach out through our contact form or
+                      WhatsApp.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FUN QUESTIONS -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="text-2xl">😄</span>
+
+              <h3 class="text-2xl font-bold text-gray-900">Fun Questions</h3>
+            </div>
+
+            <div class="grid gap-4">
+              <div
+                class="rounded-[28px] p-6 bg-gradient-to-br from-pink-100 to-orange-50"
+              >
+                <p class="text-lg font-semibold text-gray-900">
+                  Why are Fruit Bites so addictive?
+                </p>
+
+                <p class="text-gray-600 mt-3">
+                  We ask ourselves the same thing.
+                </p>
+              </div>
+
+              <div
+                class="rounded-[28px] p-6 bg-gradient-to-br from-yellow-100 to-orange-50"
+              >
+                <p class="text-lg font-semibold text-gray-900">
+                  Which flavor is the best?
+                </p>
+
+                <p class="text-gray-600 mt-3">
+                  Depends. Ask a Mango fan and a Strawberry fan separately.
+                </p>
+              </div>
+
+              <div
+                class="rounded-[28px] p-6 bg-gradient-to-br from-green-100 to-lime-50"
+              >
+                <p class="text-lg font-semibold text-gray-900">
+                  Will I stop at one bite?
+                </p>
+
+                <p class="text-gray-600 mt-3">Probably not.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/faq.js"></script>
+    <script src="js/mobile.js"></script>
+  </body>
+</html>
